@@ -2148,7 +2148,7 @@ set psu_ddr_init_data {
     # - tAL)/2) and round it up to the next integer value. Minimum value allow
     # ed for this register is 1, which implies minimum (tRCD - tAL) value to b
     # e 2 in configurations with MEMC_FREQ_RATIO=2. Unit: Clocks.
-		# PSU_DDRC_DRAMTMG4_T_RCD                                                         0x8
+		# PSU_DDRC_DRAMTMG4_T_RCD                                                         0x5
 
 		# DDR4: tCCD_L: This is the minimum time between two reads or two writes f
     # or same bank group. Others: tCCD: This is the minimum time between two r
@@ -2169,11 +2169,11 @@ set psu_ddr_init_data {
     # C_FREQ_RATIO=2 configurations, t_rp should be set to RoundDown(RoundUp(t
     # RP/tCK)/2) + 1. For MEMC_FREQ_RATIO=2 configurations in LPDDR4, t_rp sho
     # uld be set to RoundUp(RoundUp(tRP/tCK)/2). Unit: Clocks.
-		# PSU_DDRC_DRAMTMG4_T_RP                                                          0x8
+		# PSU_DDRC_DRAMTMG4_T_RP                                                          0x6
 
 		# SDRAM Timing Register 4
-		#(OFFSET, MASK, VALUE)      (0XFD070110, 0x1F0F0F1FU ,0x08040308U)  */
-    mask_write 0XFD070110 0x1F0F0F1F 0x08040308
+		#(OFFSET, MASK, VALUE)      (0XFD070110, 0x1F0F0F1FU ,0x05040306U)  */
+    mask_write 0XFD070110 0x1F0F0F1F 0x05040306
 		# Register : DRAMTMG5 @ 0XFD070114</p>
 
 		# This is the time before Self Refresh Exit that CK is maintained as a val
@@ -4460,7 +4460,7 @@ set psu_ddr_init_data {
 		# Register : PGCR0 @ 0XFD080010</p>
 
 		# Address Copy
-		# PSU_DDR_PHY_PGCR0_ADCP                                                          0x0
+		# PSU_DDR_PHY_PGCR0_ADCP                                                          0x1
 
 		# Reserved. Returns zeroes on reads.
 		# PSU_DDR_PHY_PGCR0_RESERVED_30_27                                                0x0
@@ -4490,8 +4490,8 @@ set psu_ddr_init_data {
 		# PSU_DDR_PHY_PGCR0_RESERVED_7_0                                                  0x0
 
 		# PHY General Configuration Register 0
-		#(OFFSET, MASK, VALUE)      (0XFD080010, 0xFFFFFFFFU ,0x07001E00U)  */
-    mask_write 0XFD080010 0xFFFFFFFF 0x07001E00
+		#(OFFSET, MASK, VALUE)      (0XFD080010, 0xFFFFFFFFU ,0x87001E00U)  */
+    mask_write 0XFD080010 0xFFFFFFFF 0x87001E00
 		# Register : PGCR2 @ 0XFD080018</p>
 
 		# Clear Training Status Registers
@@ -4805,7 +4805,7 @@ set psu_ddr_init_data {
 		# PSU_DDR_PHY_DTPR0_RESERVED_15                                                   0x0
 
 		# Precharge command period
-		# PSU_DDR_PHY_DTPR0_TRP                                                           0xf
+		# PSU_DDR_PHY_DTPR0_TRP                                                           0xc
 
 		# Reserved. Return zeroes on reads.
 		# PSU_DDR_PHY_DTPR0_RESERVED_7_5                                                  0x0
@@ -4814,8 +4814,8 @@ set psu_ddr_init_data {
 		# PSU_DDR_PHY_DTPR0_TRTP                                                          0x8
 
 		# DRAM Timing Parameters Register 0
-		#(OFFSET, MASK, VALUE)      (0XFD080110, 0xFFFFFFFFU ,0x06180F08U)  */
-    mask_write 0XFD080110 0xFFFFFFFF 0x06180F08
+		#(OFFSET, MASK, VALUE)      (0XFD080110, 0xFFFFFFFFU ,0x06180C08U)  */
+    mask_write 0XFD080110 0xFFFFFFFF 0x06180C08
 		# Register : DTPR1 @ 0XFD080114</p>
 
 		# Reserved. Return zeroes on reads.
@@ -16741,69 +16741,46 @@ set psu_afi_config {
     #  width 11: reserved
 		# PSU_FPD_SLCR_AFI_FS_DW_SS0_SEL                                                  0x2
 
-		# Select the 32/64/128-bit data width selection for the Slave 1 00: 32-bit
-    #  AXI data width (default) 01: 64-bit AXI data width 10: 128-bit AXI data
-    #  width 11: reserved
-		# PSU_FPD_SLCR_AFI_FS_DW_SS1_SEL                                                  0x2
-
 		# afi fs SLCR control register. This register is static and should not be
     # modified during operation.
-		#(OFFSET, MASK, VALUE)      (0XFD615000, 0x00000F00U ,0x00000A00U)  */
-    mask_write 0XFD615000 0x00000F00 0x00000A00
+		#(OFFSET, MASK, VALUE)      (0XFD615000, 0x00000300U ,0x00000200U)  */
+    mask_write 0XFD615000 0x00000300 0x00000200
 		# Register : AFIFM_RDCTRL @ 0XFD380000</p>
 
 		# Configures the Read Channel Fabric interface width. 2'b11 : Reserved 2'b
     # 10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM2_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x0
+		# PSU_AFIFM2_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x1
 
 		# Read Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD380000, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD380000 0x00000003 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD380000, 0x00000003U ,0x00000001U)  */
+    mask_write 0XFD380000 0x00000003 0x00000001
 		# Register : AFIFM_RDCTRL @ 0XFD390000</p>
 
 		# Configures the Read Channel Fabric interface width. 2'b11 : Reserved 2'b
     # 10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM3_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x0
+		# PSU_AFIFM3_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x1
 
 		# Read Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD390000, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD390000 0x00000003 0x00000000
-		# Register : AFIFM_RDCTRL @ 0XFD3A0000</p>
-
-		# Configures the Read Channel Fabric interface width. 2'b11 : Reserved 2'b
-    # 10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM4_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x0
-
-		# Read Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD3A0000, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD3A0000 0x00000003 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD390000, 0x00000003U ,0x00000001U)  */
+    mask_write 0XFD390000 0x00000003 0x00000001
 		# Register : AFIFM_WRCTRL @ 0XFD380014</p>
 
 		# Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
     # b10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM2_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x0
+		# PSU_AFIFM2_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x1
 
 		# Write Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD380014, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD380014 0x00000003 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD380014, 0x00000003U ,0x00000001U)  */
+    mask_write 0XFD380014 0x00000003 0x00000001
 		# Register : AFIFM_WRCTRL @ 0XFD390014</p>
 
 		# Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
     # b10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM3_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x0
+		# PSU_AFIFM3_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x1
 
 		# Write Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD390014, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD390014 0x00000003 0x00000000
-		# Register : AFIFM_WRCTRL @ 0XFD3A0014</p>
-
-		# Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
-    # b10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM4_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x0
-
-		# Write Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD3A0014, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD3A0014 0x00000003 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD390014, 0x00000003U ,0x00000001U)  */
+    mask_write 0XFD390014 0x00000003 0x00000001
 }
 
 set psu_ps_pl_reset_config_data {

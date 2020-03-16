@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1583950793">
+<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1584375775">
   <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
@@ -22,6 +22,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../SmartCamera/OV7670_Color/Vision-pipeline-to-DDR/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL_INTR/BASIC_VISION_PIPELINE_PERSONAL.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
         <Attr Name="ImportTime" Val="1454166964"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -31,19 +32,19 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_axis_to_ddr_writer_0_0/design_1_axis_to_ddr_writer_0_0.upgrade_log">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_axis_to_ddr_writer_0_0/design_1_axis_to_ddr_writer_0_0.upgrade_log"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_axis_to_ddr_writer_0_0/design_1_axis_to_ddr_writer_0_0.upgrade_log"/>
         <Attr Name="ImportTime" Val="1559548847"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_ddr_to_axis_reader_0_1/design_1_ddr_to_axis_reader_0_1.upgrade_log">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_ddr_to_axis_reader_0_1/design_1_ddr_to_axis_reader_0_1.upgrade_log"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_ddr_to_axis_reader_0_1/design_1_ddr_to_axis_reader_0_1.upgrade_log"/>
         <Attr Name="ImportTime" Val="1559548847"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0.upgrade_log">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0.upgrade_log"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0.upgrade_log"/>
         <Attr Name="ImportTime" Val="1559548847"/>
       </FileInfo>
     </File>

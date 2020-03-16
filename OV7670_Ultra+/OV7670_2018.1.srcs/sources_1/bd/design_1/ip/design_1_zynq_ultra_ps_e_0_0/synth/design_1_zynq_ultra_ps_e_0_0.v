@@ -52,9 +52,9 @@
 
 (* X_CORE_INFO = "zynq_ultra_ps_e_v3_2_0_zynq_ultra_ps_e,Vivado 2018.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_zynq_ultra_ps_e_0_0,zynq_ultra_ps_e_v3_2_0_zynq_ultra_ps_e,{}" *)
-(* CORE_GENERATION_INFO = "design_1_zynq_ultra_ps_e_0_0,zynq_ultra_ps_e_v3_2_0_zynq_ultra_ps_e,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=zynq_ultra_ps_e,x_ipVersion=3.2,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_DP_USE_AUDIO=0,C_DP_USE_VIDEO=0,C_MAXIGP0_DATA_WIDTH=128,C_MAXIGP1_DATA_WIDTH=128,C_MAXIGP2_DATA_WIDTH=128,C_SAXIGP0_DATA_WIDTH=128,C_SAXIGP1_DATA_WIDTH=128,C_SAXIGP2_DATA_WIDTH=128,C_SAXIGP3_DATA_WIDTH=128,C_SAXIGP4_DATA_WIDTH=128,C_SAXIGP5_DATA_WIDTH=128,C_SAXI\
-GP6_DATA_WIDTH=128,C_USE_DIFF_RW_CLK_GP0=0,C_USE_DIFF_RW_CLK_GP1=0,C_USE_DIFF_RW_CLK_GP2=0,C_USE_DIFF_RW_CLK_GP3=0,C_USE_DIFF_RW_CLK_GP4=0,C_USE_DIFF_RW_CLK_GP5=0,C_USE_DIFF_RW_CLK_GP6=0,C_EN_FIFO_ENET0=0,C_EN_FIFO_ENET1=0,C_EN_FIFO_ENET2=0,C_EN_FIFO_ENET3=0,C_PL_CLK0_BUF=TRUE,C_PL_CLK1_BUF=FALSE,C_PL_CLK2_BUF=FALSE,C_PL_CLK3_BUF=FALSE,C_TRACE_PIPELINE_WIDTH=8,C_EN_EMIO_TRACE=0,C_TRACE_DATA_WIDTH=32,C_USE_DEBUG_TEST=0,C_SD0_INTERNAL_BUS_WIDTH=4,C_SD1_INTERNAL_BUS_WIDTH=4,C_NUM_F2P_0_INTR_INPUTS=\
-2,C_NUM_F2P_1_INTR_INPUTS=1,C_EMIO_GPIO_WIDTH=1,C_NUM_FABRIC_RESETS=1}" *)
+(* CORE_GENERATION_INFO = "design_1_zynq_ultra_ps_e_0_0,zynq_ultra_ps_e_v3_2_0_zynq_ultra_ps_e,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=zynq_ultra_ps_e,x_ipVersion=3.2,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_DP_USE_AUDIO=0,C_DP_USE_VIDEO=0,C_MAXIGP0_DATA_WIDTH=128,C_MAXIGP1_DATA_WIDTH=128,C_MAXIGP2_DATA_WIDTH=128,C_SAXIGP0_DATA_WIDTH=128,C_SAXIGP1_DATA_WIDTH=128,C_SAXIGP2_DATA_WIDTH=64,C_SAXIGP3_DATA_WIDTH=64,C_SAXIGP4_DATA_WIDTH=128,C_SAXIGP5_DATA_WIDTH=128,C_SAXIGP\
+6_DATA_WIDTH=128,C_USE_DIFF_RW_CLK_GP0=0,C_USE_DIFF_RW_CLK_GP1=0,C_USE_DIFF_RW_CLK_GP2=0,C_USE_DIFF_RW_CLK_GP3=0,C_USE_DIFF_RW_CLK_GP4=0,C_USE_DIFF_RW_CLK_GP5=0,C_USE_DIFF_RW_CLK_GP6=0,C_EN_FIFO_ENET0=0,C_EN_FIFO_ENET1=0,C_EN_FIFO_ENET2=0,C_EN_FIFO_ENET3=0,C_PL_CLK0_BUF=TRUE,C_PL_CLK1_BUF=FALSE,C_PL_CLK2_BUF=FALSE,C_PL_CLK3_BUF=FALSE,C_TRACE_PIPELINE_WIDTH=8,C_EN_EMIO_TRACE=0,C_TRACE_DATA_WIDTH=32,C_USE_DEBUG_TEST=0,C_SD0_INTERNAL_BUS_WIDTH=4,C_SD1_INTERNAL_BUS_WIDTH=4,C_NUM_F2P_0_INTR_INPUTS=2,\
+C_NUM_F2P_1_INTR_INPUTS=1,C_EMIO_GPIO_WIDTH=1,C_NUM_FABRIC_RESETS=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_zynq_ultra_ps_e_0_0 (
   maxihpm0_fpd_aclk,
@@ -97,46 +97,6 @@ module design_1_zynq_ultra_ps_e_0_0 (
   maxigp0_rready,
   maxigp0_awqos,
   maxigp0_arqos,
-  maxihpm1_fpd_aclk,
-  maxigp1_awid,
-  maxigp1_awaddr,
-  maxigp1_awlen,
-  maxigp1_awsize,
-  maxigp1_awburst,
-  maxigp1_awlock,
-  maxigp1_awcache,
-  maxigp1_awprot,
-  maxigp1_awvalid,
-  maxigp1_awuser,
-  maxigp1_awready,
-  maxigp1_wdata,
-  maxigp1_wstrb,
-  maxigp1_wlast,
-  maxigp1_wvalid,
-  maxigp1_wready,
-  maxigp1_bid,
-  maxigp1_bresp,
-  maxigp1_bvalid,
-  maxigp1_bready,
-  maxigp1_arid,
-  maxigp1_araddr,
-  maxigp1_arlen,
-  maxigp1_arsize,
-  maxigp1_arburst,
-  maxigp1_arlock,
-  maxigp1_arcache,
-  maxigp1_arprot,
-  maxigp1_arvalid,
-  maxigp1_aruser,
-  maxigp1_arready,
-  maxigp1_rid,
-  maxigp1_rdata,
-  maxigp1_rresp,
-  maxigp1_rlast,
-  maxigp1_rvalid,
-  maxigp1_rready,
-  maxigp1_awqos,
-  maxigp1_arqos,
   saxihp0_fpd_aclk,
   saxigp2_aruser,
   saxigp2_awuser,
@@ -217,46 +177,6 @@ module design_1_zynq_ultra_ps_e_0_0 (
   saxigp3_rready,
   saxigp3_awqos,
   saxigp3_arqos,
-  saxihp2_fpd_aclk,
-  saxigp4_aruser,
-  saxigp4_awuser,
-  saxigp4_awid,
-  saxigp4_awaddr,
-  saxigp4_awlen,
-  saxigp4_awsize,
-  saxigp4_awburst,
-  saxigp4_awlock,
-  saxigp4_awcache,
-  saxigp4_awprot,
-  saxigp4_awvalid,
-  saxigp4_awready,
-  saxigp4_wdata,
-  saxigp4_wstrb,
-  saxigp4_wlast,
-  saxigp4_wvalid,
-  saxigp4_wready,
-  saxigp4_bid,
-  saxigp4_bresp,
-  saxigp4_bvalid,
-  saxigp4_bready,
-  saxigp4_arid,
-  saxigp4_araddr,
-  saxigp4_arlen,
-  saxigp4_arsize,
-  saxigp4_arburst,
-  saxigp4_arlock,
-  saxigp4_arcache,
-  saxigp4_arprot,
-  saxigp4_arvalid,
-  saxigp4_arready,
-  saxigp4_rid,
-  saxigp4_rdata,
-  saxigp4_rresp,
-  saxigp4_rlast,
-  saxigp4_rvalid,
-  saxigp4_rready,
-  saxigp4_awqos,
-  saxigp4_arqos,
   pl_ps_irq0,
   pl_resetn0,
   pl_clk0,
@@ -349,89 +269,6 @@ output wire [3 : 0] maxigp0_awqos;
 THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM0_FPD ARQOS" *)
 output wire [3 : 0] maxigp0_arqos;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_HPM1_FPD_ACLK, ASSOCIATED_BUSIF M_AXI_HPM1_FPD, FREQ_HZ 24000000, PHASE 0.000, CLK_DOMAIN design_1_PCLK" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 M_AXI_HPM1_FPD_ACLK CLK" *)
-input wire maxihpm1_fpd_aclk;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWID" *)
-output wire [15 : 0] maxigp1_awid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWADDR" *)
-output wire [39 : 0] maxigp1_awaddr;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWLEN" *)
-output wire [7 : 0] maxigp1_awlen;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWSIZE" *)
-output wire [2 : 0] maxigp1_awsize;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWBURST" *)
-output wire [1 : 0] maxigp1_awburst;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWLOCK" *)
-output wire maxigp1_awlock;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWCACHE" *)
-output wire [3 : 0] maxigp1_awcache;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWPROT" *)
-output wire [2 : 0] maxigp1_awprot;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWVALID" *)
-output wire maxigp1_awvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWUSER" *)
-output wire [15 : 0] maxigp1_awuser;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWREADY" *)
-input wire maxigp1_awready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WDATA" *)
-output wire [127 : 0] maxigp1_wdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WSTRB" *)
-output wire [15 : 0] maxigp1_wstrb;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WLAST" *)
-output wire maxigp1_wlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WVALID" *)
-output wire maxigp1_wvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WREADY" *)
-input wire maxigp1_wready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD BID" *)
-input wire [15 : 0] maxigp1_bid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD BRESP" *)
-input wire [1 : 0] maxigp1_bresp;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD BVALID" *)
-input wire maxigp1_bvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD BREADY" *)
-output wire maxigp1_bready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARID" *)
-output wire [15 : 0] maxigp1_arid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARADDR" *)
-output wire [39 : 0] maxigp1_araddr;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARLEN" *)
-output wire [7 : 0] maxigp1_arlen;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARSIZE" *)
-output wire [2 : 0] maxigp1_arsize;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARBURST" *)
-output wire [1 : 0] maxigp1_arburst;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARLOCK" *)
-output wire maxigp1_arlock;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARCACHE" *)
-output wire [3 : 0] maxigp1_arcache;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARPROT" *)
-output wire [2 : 0] maxigp1_arprot;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARVALID" *)
-output wire maxigp1_arvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARUSER" *)
-output wire [15 : 0] maxigp1_aruser;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARREADY" *)
-input wire maxigp1_arready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD RID" *)
-input wire [15 : 0] maxigp1_rid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD RDATA" *)
-input wire [127 : 0] maxigp1_rdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD RRESP" *)
-input wire [1 : 0] maxigp1_rresp;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD RLAST" *)
-input wire maxigp1_rlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD RVALID" *)
-input wire maxigp1_rvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD RREADY" *)
-output wire maxigp1_rready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD AWQOS" *)
-output wire [3 : 0] maxigp1_awqos;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_HPM1_FPD, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 24000000, ID_WIDTH 16, ADDR_WIDTH 40, AWUSER_WIDTH 16, ARUSER_WIDTH 16, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_PCLK, NUM_READ_THREADS 4, NUM_WRITE_THR\
-EADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD ARQOS" *)
-output wire [3 : 0] maxigp1_arqos;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP0_FPD_ACLK, ASSOCIATED_BUSIF S_AXI_HP0_FPD, FREQ_HZ 100000002, PHASE 0.000, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_HP0_FPD_ACLK CLK" *)
 input wire saxihp0_fpd_aclk;
@@ -460,9 +297,9 @@ input wire saxigp2_awvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWREADY" *)
 output wire saxigp2_awready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WDATA" *)
-input wire [127 : 0] saxigp2_wdata;
+input wire [63 : 0] saxigp2_wdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WSTRB" *)
-input wire [15 : 0] saxigp2_wstrb;
+input wire [7 : 0] saxigp2_wstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WLAST" *)
 input wire saxigp2_wlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WVALID" *)
@@ -500,7 +337,7 @@ output wire saxigp2_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RID" *)
 output wire [5 : 0] saxigp2_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RDATA" *)
-output wire [127 : 0] saxigp2_rdata;
+output wire [63 : 0] saxigp2_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RRESP" *)
 output wire [1 : 0] saxigp2_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RLAST" *)
@@ -511,8 +348,8 @@ output wire saxigp2_rvalid;
 input wire saxigp2_rready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWQOS" *)
 input wire [3 : 0] saxigp2_awqos;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP0_FPD, NUM_WRITE_OUTSTANDING 16, NUM_READ_OUTSTANDING 16, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 100000002, ID_WIDTH 6, ADDR_WIDTH 49, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 128, PHASE 0.000, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_TH\
-READS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP0_FPD, NUM_WRITE_OUTSTANDING 16, NUM_READ_OUTSTANDING 16, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000002, ID_WIDTH 6, ADDR_WIDTH 49, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THR\
+EADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARQOS" *)
 input wire [3 : 0] saxigp2_arqos;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP1_FPD_ACLK, ASSOCIATED_BUSIF S_AXI_HP1_FPD, FREQ_HZ 100000002, PHASE 0.000, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0" *)
@@ -543,9 +380,9 @@ input wire saxigp3_awvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD AWREADY" *)
 output wire saxigp3_awready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD WDATA" *)
-input wire [127 : 0] saxigp3_wdata;
+input wire [63 : 0] saxigp3_wdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD WSTRB" *)
-input wire [15 : 0] saxigp3_wstrb;
+input wire [7 : 0] saxigp3_wstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD WLAST" *)
 input wire saxigp3_wlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD WVALID" *)
@@ -583,7 +420,7 @@ output wire saxigp3_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD RID" *)
 output wire [5 : 0] saxigp3_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD RDATA" *)
-output wire [127 : 0] saxigp3_rdata;
+output wire [63 : 0] saxigp3_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD RRESP" *)
 output wire [1 : 0] saxigp3_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD RLAST" *)
@@ -594,93 +431,10 @@ output wire saxigp3_rvalid;
 input wire saxigp3_rready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD AWQOS" *)
 input wire [3 : 0] saxigp3_awqos;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP1_FPD, NUM_WRITE_OUTSTANDING 16, NUM_READ_OUTSTANDING 16, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 100000002, ID_WIDTH 6, ADDR_WIDTH 49, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 128, PHASE 0.000, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_TH\
-READS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP1_FPD, NUM_WRITE_OUTSTANDING 16, NUM_READ_OUTSTANDING 16, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000002, ID_WIDTH 6, ADDR_WIDTH 49, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THR\
+EADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP1_FPD ARQOS" *)
 input wire [3 : 0] saxigp3_arqos;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP2_FPD_ACLK, ASSOCIATED_BUSIF S_AXI_HP2_FPD, FREQ_HZ 24000000, PHASE 0.000, CLK_DOMAIN design_1_PCLK" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_HP2_FPD_ACLK CLK" *)
-input wire saxihp2_fpd_aclk;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARUSER" *)
-input wire saxigp4_aruser;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWUSER" *)
-input wire saxigp4_awuser;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWID" *)
-input wire [5 : 0] saxigp4_awid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWADDR" *)
-input wire [48 : 0] saxigp4_awaddr;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWLEN" *)
-input wire [7 : 0] saxigp4_awlen;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWSIZE" *)
-input wire [2 : 0] saxigp4_awsize;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWBURST" *)
-input wire [1 : 0] saxigp4_awburst;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWLOCK" *)
-input wire saxigp4_awlock;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWCACHE" *)
-input wire [3 : 0] saxigp4_awcache;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWPROT" *)
-input wire [2 : 0] saxigp4_awprot;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWVALID" *)
-input wire saxigp4_awvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWREADY" *)
-output wire saxigp4_awready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD WDATA" *)
-input wire [127 : 0] saxigp4_wdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD WSTRB" *)
-input wire [15 : 0] saxigp4_wstrb;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD WLAST" *)
-input wire saxigp4_wlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD WVALID" *)
-input wire saxigp4_wvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD WREADY" *)
-output wire saxigp4_wready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD BID" *)
-output wire [5 : 0] saxigp4_bid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD BRESP" *)
-output wire [1 : 0] saxigp4_bresp;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD BVALID" *)
-output wire saxigp4_bvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD BREADY" *)
-input wire saxigp4_bready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARID" *)
-input wire [5 : 0] saxigp4_arid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARADDR" *)
-input wire [48 : 0] saxigp4_araddr;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARLEN" *)
-input wire [7 : 0] saxigp4_arlen;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARSIZE" *)
-input wire [2 : 0] saxigp4_arsize;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARBURST" *)
-input wire [1 : 0] saxigp4_arburst;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARLOCK" *)
-input wire saxigp4_arlock;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARCACHE" *)
-input wire [3 : 0] saxigp4_arcache;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARPROT" *)
-input wire [2 : 0] saxigp4_arprot;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARVALID" *)
-input wire saxigp4_arvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARREADY" *)
-output wire saxigp4_arready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD RID" *)
-output wire [5 : 0] saxigp4_rid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD RDATA" *)
-output wire [127 : 0] saxigp4_rdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD RRESP" *)
-output wire [1 : 0] saxigp4_rresp;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD RLAST" *)
-output wire saxigp4_rlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD RVALID" *)
-output wire saxigp4_rvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD RREADY" *)
-input wire saxigp4_rready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD AWQOS" *)
-input wire [3 : 0] saxigp4_awqos;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP2_FPD, NUM_WRITE_OUTSTANDING 16, NUM_READ_OUTSTANDING 16, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 24000000, ID_WIDTH 6, ADDR_WIDTH 49, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 128, PHASE 0.000, CLK_DOMAIN design_1_PCLK, NUM_READ_THREADS 1, NUM_WRITE_THREA\
-DS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2_FPD ARQOS" *)
-input wire [3 : 0] saxigp4_arqos;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_PS_IRQ0, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH, PortWidth 2" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 PL_PS_IRQ0 INTERRUPT" *)
 input wire [1 : 0] pl_ps_irq0;
@@ -711,8 +465,8 @@ output wire ps_pl_irq_ttc0_2;
     .C_MAXIGP2_DATA_WIDTH(128),
     .C_SAXIGP0_DATA_WIDTH(128),
     .C_SAXIGP1_DATA_WIDTH(128),
-    .C_SAXIGP2_DATA_WIDTH(128),
-    .C_SAXIGP3_DATA_WIDTH(128),
+    .C_SAXIGP2_DATA_WIDTH(64),
+    .C_SAXIGP3_DATA_WIDTH(64),
     .C_SAXIGP4_DATA_WIDTH(128),
     .C_SAXIGP5_DATA_WIDTH(128),
     .C_SAXIGP6_DATA_WIDTH(128),
@@ -782,46 +536,46 @@ output wire ps_pl_irq_ttc0_2;
     .maxigp0_rready(maxigp0_rready),
     .maxigp0_awqos(maxigp0_awqos),
     .maxigp0_arqos(maxigp0_arqos),
-    .maxihpm1_fpd_aclk(maxihpm1_fpd_aclk),
-    .maxigp1_awid(maxigp1_awid),
-    .maxigp1_awaddr(maxigp1_awaddr),
-    .maxigp1_awlen(maxigp1_awlen),
-    .maxigp1_awsize(maxigp1_awsize),
-    .maxigp1_awburst(maxigp1_awburst),
-    .maxigp1_awlock(maxigp1_awlock),
-    .maxigp1_awcache(maxigp1_awcache),
-    .maxigp1_awprot(maxigp1_awprot),
-    .maxigp1_awvalid(maxigp1_awvalid),
-    .maxigp1_awuser(maxigp1_awuser),
-    .maxigp1_awready(maxigp1_awready),
-    .maxigp1_wdata(maxigp1_wdata),
-    .maxigp1_wstrb(maxigp1_wstrb),
-    .maxigp1_wlast(maxigp1_wlast),
-    .maxigp1_wvalid(maxigp1_wvalid),
-    .maxigp1_wready(maxigp1_wready),
-    .maxigp1_bid(maxigp1_bid),
-    .maxigp1_bresp(maxigp1_bresp),
-    .maxigp1_bvalid(maxigp1_bvalid),
-    .maxigp1_bready(maxigp1_bready),
-    .maxigp1_arid(maxigp1_arid),
-    .maxigp1_araddr(maxigp1_araddr),
-    .maxigp1_arlen(maxigp1_arlen),
-    .maxigp1_arsize(maxigp1_arsize),
-    .maxigp1_arburst(maxigp1_arburst),
-    .maxigp1_arlock(maxigp1_arlock),
-    .maxigp1_arcache(maxigp1_arcache),
-    .maxigp1_arprot(maxigp1_arprot),
-    .maxigp1_arvalid(maxigp1_arvalid),
-    .maxigp1_aruser(maxigp1_aruser),
-    .maxigp1_arready(maxigp1_arready),
-    .maxigp1_rid(maxigp1_rid),
-    .maxigp1_rdata(maxigp1_rdata),
-    .maxigp1_rresp(maxigp1_rresp),
-    .maxigp1_rlast(maxigp1_rlast),
-    .maxigp1_rvalid(maxigp1_rvalid),
-    .maxigp1_rready(maxigp1_rready),
-    .maxigp1_awqos(maxigp1_awqos),
-    .maxigp1_arqos(maxigp1_arqos),
+    .maxihpm1_fpd_aclk(1'B0),
+    .maxigp1_awid(),
+    .maxigp1_awaddr(),
+    .maxigp1_awlen(),
+    .maxigp1_awsize(),
+    .maxigp1_awburst(),
+    .maxigp1_awlock(),
+    .maxigp1_awcache(),
+    .maxigp1_awprot(),
+    .maxigp1_awvalid(),
+    .maxigp1_awuser(),
+    .maxigp1_awready(1'B0),
+    .maxigp1_wdata(),
+    .maxigp1_wstrb(),
+    .maxigp1_wlast(),
+    .maxigp1_wvalid(),
+    .maxigp1_wready(1'B0),
+    .maxigp1_bid(16'B0),
+    .maxigp1_bresp(2'B0),
+    .maxigp1_bvalid(1'B0),
+    .maxigp1_bready(),
+    .maxigp1_arid(),
+    .maxigp1_araddr(),
+    .maxigp1_arlen(),
+    .maxigp1_arsize(),
+    .maxigp1_arburst(),
+    .maxigp1_arlock(),
+    .maxigp1_arcache(),
+    .maxigp1_arprot(),
+    .maxigp1_arvalid(),
+    .maxigp1_aruser(),
+    .maxigp1_arready(1'B0),
+    .maxigp1_rid(16'B0),
+    .maxigp1_rdata(128'B0),
+    .maxigp1_rresp(2'B0),
+    .maxigp1_rlast(1'B0),
+    .maxigp1_rvalid(1'B0),
+    .maxigp1_rready(),
+    .maxigp1_awqos(),
+    .maxigp1_arqos(),
     .maxihpm0_lpd_aclk(1'B0),
     .maxigp2_awid(),
     .maxigp2_awaddr(),
@@ -1051,46 +805,46 @@ output wire ps_pl_irq_ttc0_2;
     .saxigp3_wacount(),
     .saxihp2_fpd_rclk(1'B0),
     .saxihp2_fpd_wclk(1'B0),
-    .saxihp2_fpd_aclk(saxihp2_fpd_aclk),
-    .saxigp4_aruser(saxigp4_aruser),
-    .saxigp4_awuser(saxigp4_awuser),
-    .saxigp4_awid(saxigp4_awid),
-    .saxigp4_awaddr(saxigp4_awaddr),
-    .saxigp4_awlen(saxigp4_awlen),
-    .saxigp4_awsize(saxigp4_awsize),
-    .saxigp4_awburst(saxigp4_awburst),
-    .saxigp4_awlock(saxigp4_awlock),
-    .saxigp4_awcache(saxigp4_awcache),
-    .saxigp4_awprot(saxigp4_awprot),
-    .saxigp4_awvalid(saxigp4_awvalid),
-    .saxigp4_awready(saxigp4_awready),
-    .saxigp4_wdata(saxigp4_wdata),
-    .saxigp4_wstrb(saxigp4_wstrb),
-    .saxigp4_wlast(saxigp4_wlast),
-    .saxigp4_wvalid(saxigp4_wvalid),
-    .saxigp4_wready(saxigp4_wready),
-    .saxigp4_bid(saxigp4_bid),
-    .saxigp4_bresp(saxigp4_bresp),
-    .saxigp4_bvalid(saxigp4_bvalid),
-    .saxigp4_bready(saxigp4_bready),
-    .saxigp4_arid(saxigp4_arid),
-    .saxigp4_araddr(saxigp4_araddr),
-    .saxigp4_arlen(saxigp4_arlen),
-    .saxigp4_arsize(saxigp4_arsize),
-    .saxigp4_arburst(saxigp4_arburst),
-    .saxigp4_arlock(saxigp4_arlock),
-    .saxigp4_arcache(saxigp4_arcache),
-    .saxigp4_arprot(saxigp4_arprot),
-    .saxigp4_arvalid(saxigp4_arvalid),
-    .saxigp4_arready(saxigp4_arready),
-    .saxigp4_rid(saxigp4_rid),
-    .saxigp4_rdata(saxigp4_rdata),
-    .saxigp4_rresp(saxigp4_rresp),
-    .saxigp4_rlast(saxigp4_rlast),
-    .saxigp4_rvalid(saxigp4_rvalid),
-    .saxigp4_rready(saxigp4_rready),
-    .saxigp4_awqos(saxigp4_awqos),
-    .saxigp4_arqos(saxigp4_arqos),
+    .saxihp2_fpd_aclk(1'B0),
+    .saxigp4_aruser(1'B0),
+    .saxigp4_awuser(1'B0),
+    .saxigp4_awid(6'B0),
+    .saxigp4_awaddr(49'B0),
+    .saxigp4_awlen(8'B0),
+    .saxigp4_awsize(3'B0),
+    .saxigp4_awburst(2'B0),
+    .saxigp4_awlock(1'B0),
+    .saxigp4_awcache(4'B0),
+    .saxigp4_awprot(3'B0),
+    .saxigp4_awvalid(1'B0),
+    .saxigp4_awready(),
+    .saxigp4_wdata(128'B0),
+    .saxigp4_wstrb(16'B0),
+    .saxigp4_wlast(1'B0),
+    .saxigp4_wvalid(1'B0),
+    .saxigp4_wready(),
+    .saxigp4_bid(),
+    .saxigp4_bresp(),
+    .saxigp4_bvalid(),
+    .saxigp4_bready(1'B0),
+    .saxigp4_arid(6'B0),
+    .saxigp4_araddr(49'B0),
+    .saxigp4_arlen(8'B0),
+    .saxigp4_arsize(3'B0),
+    .saxigp4_arburst(2'B0),
+    .saxigp4_arlock(1'B0),
+    .saxigp4_arcache(4'B0),
+    .saxigp4_arprot(3'B0),
+    .saxigp4_arvalid(1'B0),
+    .saxigp4_arready(),
+    .saxigp4_rid(),
+    .saxigp4_rdata(),
+    .saxigp4_rresp(),
+    .saxigp4_rlast(),
+    .saxigp4_rvalid(),
+    .saxigp4_rready(1'B0),
+    .saxigp4_awqos(4'B0),
+    .saxigp4_arqos(4'B0),
     .saxigp4_rcount(),
     .saxigp4_wcount(),
     .saxigp4_racount(),

@@ -3,45 +3,51 @@
    commentid: "",
    guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
 #  -string -flagsOSRD
-preplace inst VDMA -pg 1 -lvl 2 -y 420 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -y 590 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|axi_interconnect_0 -pg 1 -lvl 1 -y 920 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0 -pg 1 -lvl 4 -y 950 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|mux_sd_ov_1 -pg 1 -lvl 3 -y 960 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|axi_interconnect_1 -pg 1 -lvl 4 -y 1080 -defaultsOSRD
-preplace inst axi_gpio_frame_intr -pg 1 -lvl 2 -y 18 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|LF_valid_to_AXIS -pg 1 -lvl 2 -y 1140 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|ddr_to_axis_reader_S -pg 1 -lvl 2 -y 1010 -defaultsOSRD
-preplace inst axi_gpio_pl_reset -pg 1 -lvl 2 -y 160 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS -pg 1 -lvl 4 -y 910 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS|ov7670_interface_0 -pg 1 -lvl 1 -y 1040 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 1 -y 200 -defaultsOSRD
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|ddr_to_axis_reader_SD_0_outStream_channel_1_V 1 2 1 2710
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|ddr_to_axis_reader_SD_0_m_axi_base_ddr_addr 1 2 2 2710 1080 NJ
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_LUMA 1 1 4 390 300 NJ 300 NJ 300 3800
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0_outStream_LUMA_V_V 1 4 1 N
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|axi_interconnect_0_M01_AXI 1 1 2 N 930 NJ
-preplace netloc processing_system7_0_axi_periph_M03_AXI 1 1 1 370
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 1 1 350J
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|LF_valid_to_AXIS_outputStream_V_V 1 2 1 2720
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|axi_interconnect_0_M00_AXI 1 1 1 2290
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 0 4 10 80 NJ 80 NJ 80 1740
-preplace netloc processing_system7_0_axi_periph_M05_AXI 1 1 1 350
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|S00_AXI_1 1 0 1 N
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|axi_interconnect_1_M00_AXI 1 4 1 NJ
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 1 1 380
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0_outStream_grayscale_V_V 1 4 1 N
-preplace netloc VDMA_AXIM_READER 1 2 1 980
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_AXIM_READER_SD 1 2 3 1000 490 NJ 490 3810
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0_outStream_CHROMA_V_V 1 4 1 N
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 3 1 1740
-preplace netloc VDMA_AXIM_WRITER 1 2 1 970
-preplace netloc OV7670_GRAYSCALE_TO_AXIS|mux_sd_ov_1_outputStream_V_V 1 3 1 N
-preplace netloc processing_system7_0_axi_periph_M04_AXI 1 1 1 360
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_CHROMA 1 1 4 390 530 990J 500 NJ 500 3790
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 1 1 NJ
-levelinfo -pg 1 -10 210 780 1437 2120 3830 3860 -top -80 -bot 1400
-levelinfo -hier OV7670_GRAYSCALE_TO_AXIS * 2150 2500 2940 3390 *
+preplace inst VDMA -pg 1 -lvl 3 -y 368 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 4 -y 120 -defaultsOSRD
+preplace inst VDMA|axis_to_ddr_writer_LUMA -pg 1 -lvl 2 -y 468 -defaultsOSRD
+preplace inst VDMA|axis_to_ddr_writer_CHROMA -pg 1 -lvl 2 -y 588 -defaultsOSRD
+preplace inst VDMA|axis_data_fifo_raw_CHROMA -pg 1 -lvl 1 -y 768 -defaultsOSRD
+preplace inst VDMA|axi_mem_intercon_reader -pg 1 -lvl 3 -y 718 -defaultsOSRD
+preplace inst VDMA|axis_to_ddr_writer_0 -pg 1 -lvl 2 -y 348 -defaultsOSRD
+preplace inst VDMA|axi_mem_intercon_writer -pg 1 -lvl 3 -y 448 -defaultsOSRD
+preplace inst VDMA|ddr_to_axis_reader_0 -pg 1 -lvl 2 -y 708 -defaultsOSRD
+preplace inst axi_gpio_frame_intr -pg 1 -lvl 6 -y 350 -defaultsOSRD
+preplace inst VDMA|axis_data_fifo_pipeline_to_writer -pg 1 -lvl 1 -y 358 -defaultsOSRD
+preplace inst axi_gpio_pl_reset -pg 1 -lvl 6 -y 800 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS -pg 1 -lvl 2 -y 400 -defaultsOSRD
+preplace inst VDMA|axis_data_fifo_raw_LUMA -pg 1 -lvl 1 -y 638 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 5 -y 390 -defaultsOSRD
+preplace netloc VDMA|S01_AXI_1 1 2 1 2030
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_LUMA 1 2 1 960
+preplace netloc VDMA|axi_mem_intercon_M00_AXI 1 3 1 2310
+preplace netloc VDMA|axis_data_fifo_pipeline_to_writer_M_AXIS 1 1 1 N
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 4 990 188 2500J 210 NJ 210 4750
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 5 1 4770
+preplace netloc VDMA|ddr_to_axis_reader_0_m_axi_base_ddr_addr 1 2 1 NJ
+preplace netloc VDMA|s_axi_AXILite_raw_CHROMA_1 1 0 2 NJ 578 N
+preplace netloc VDMA|axi_mem_intercon_reader_M00_AXI 1 3 1 NJ
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 4320
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 4 970 198 2470J 240 NJ 240 4730
+preplace netloc VDMA|axis_to_ddr_writer_0_m_axi_base_ddr_addr 1 2 1 2030
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 4 980 178 2510J 220 NJ 220 4720
+preplace netloc VDMA|AXIS_IN_RAW_CHROMA_1 1 0 1 NJ
+preplace netloc VDMA|AXIS_IN_RAW_LUMA_1 1 0 1 NJ
+preplace netloc VDMA|s_axi_AXILiteS1_1 1 0 2 1370 458 1590J
+preplace netloc VDMA|Filter_Convolution_0_out_img_V 1 0 1 1370J
+preplace netloc VDMA|axis_data_fifo_1_M_AXIS 1 1 1 1610
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_V_V 1 2 1 950
+preplace netloc VDMA_AXIM_READER 1 3 1 2490
+preplace netloc VDMA|s_axi_AXILiteS_1 1 0 2 NJ 298 1590
+preplace netloc VDMA_AXIM_WRITER 1 3 1 2480
+preplace netloc VDMA|s_axi_AXILite_raw_LUMA_1 1 0 2 NJ 468 1610
+preplace netloc VDMA|axis_data_fifo_0_M_AXIS 1 1 1 1600
+preplace netloc VDMA|S02_AXI_1 1 2 1 N
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 4 1000 208 2460J 230 NJ 230 4740
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_CHROMA 1 2 1 950
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 5 1 4760
+levelinfo -pg 1 -10 20 810 1500 4020 4580 4940 5050 -top 0 -bot 1950
+levelinfo -hier VDMA * 1480 1820 2170 *
 ",
 }
 {
