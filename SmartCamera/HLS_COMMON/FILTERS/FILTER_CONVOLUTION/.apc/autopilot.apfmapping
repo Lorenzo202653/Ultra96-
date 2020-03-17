@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Filter_convolution.cpp" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/Filter_convolution.cpp"/>
+    <originFiles name="Filter_convolution.h" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/Filter_convolution.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Testbench.cpp" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/Testbench.cpp"/>
+    <originFiles name="Testbench.h" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/Testbench.h"/>
+    <originFiles name="ap_bmp.cpp" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/ap_bmp.cpp"/>
+    <originFiles name="ap_bmp.h" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/ap_bmp.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

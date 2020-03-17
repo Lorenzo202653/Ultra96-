@@ -1,0 +1,528 @@
+
+
+================================================================
+== Vivado HLS Report for 'Filter_Convolution'
+================================================================
+* Date:           Tue Mar 10 11:25:00 2020
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        FILTER_CONVOLUTION
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.54|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  308344|  308344|  308344|  308344|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+--------+--------+----------+-----------+-----------+--------+----------+
+        |                     |     Latency     | Iteration|  Initiation Interval  |  Trip  |          |
+        |      Loop Name      |   min  |   max  |  Latency |  achieved |   target  |  Count | Pipelined|
+        +---------------------+--------+--------+----------+-----------+-----------+--------+----------+
+        |- Loop_row_Loop_col  |  308341|  308341|        22|          1|          1|  308321|    yes   |
+        +---------------------+--------+--------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 22
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 25
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 22, States = { 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	25  / (exitcond_flatten)
+	5  / (!exitcond_flatten)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	3  / true
+25 --> 
+
+* FSM state operations: 
+
+ <State 1> : 1.35ns
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%in_temp_V_1 = alloca i8"
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%window_V_1_2_loc_1 = alloca i8"
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%window_V_0_2_loc_1 = alloca i8"
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%id_filter_V_read = call i3 @_ssdm_op_Read.ap_none.i3(i3 %id_filter_V)"
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_3 = zext i3 %id_filter_V_read to i64" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%M_0_0_addr = getelementptr [8 x i2]* @M_0_0, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 32 [2/2] (1.35ns)   --->   "%M_0_0_load = load i2* %M_0_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%M_0_1_addr = getelementptr [8 x i3]* @M_0_1, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 34 [2/2] (1.35ns)   --->   "%M_0_1_load = load i3* %M_0_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%M_0_2_addr = getelementptr [8 x i2]* @M_0_2, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 36 [2/2] (1.35ns)   --->   "%M_0_2_load = load i2* %M_0_2_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%M_1_0_addr = getelementptr [8 x i3]* @M_1_0, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 38 [2/2] (1.35ns)   --->   "%M_1_0_load = load i3* %M_1_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%M_1_1_addr = getelementptr [8 x i4]* @M_1_1, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 40 [2/2] (1.35ns)   --->   "%M_1_1_load = load i4* %M_1_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%M_1_2_addr = getelementptr [8 x i3]* @M_1_2, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 42 [2/2] (1.35ns)   --->   "%M_1_2_load = load i3* %M_1_2_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%M_2_0_addr = getelementptr [8 x i2]* @M_2_0, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 44 [2/2] (1.35ns)   --->   "%M_2_0_load = load i2* %M_2_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%M_2_1_addr = getelementptr [8 x i3]* @M_2_1, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 46 [2/2] (1.35ns)   --->   "%M_2_1_load = load i3* %M_2_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%M_2_2_addr = getelementptr [8 x i3]* @M_2_2, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 48 [2/2] (1.35ns)   --->   "%M_2_2_load = load i3* %M_2_2_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%SumF_addr = getelementptr [8 x i5]* @SumF, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 50 [2/2] (1.35ns)   --->   "%SumF_load = load i5* %SumF_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%Offset_addr = getelementptr [8 x i8]* @Offset, i64 0, i64 %tmp_3" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_1 : Operation 52 [2/2] (1.35ns)   --->   "%Offset_load = load i8* %Offset_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+
+ <State 2> : 1.35ns
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i3 %id_filter_V), !map !79"
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %in_img_V), !map !85"
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %out_img_V), !map !91"
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @Filter_Convolution_s) nounwind"
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i3 %id_filter_V, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [FILTER_CONVOLUTION/Filter_convolution.cpp:25]
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_img_V, [5 x i8]* @p_str4, i32 1, i32 1, [5 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_img_V, [5 x i8]* @p_str4, i32 1, i32 1, [5 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%window_V_0_2_load = load i8* @window_V_0_2, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%window_V_1_2_load = load i8* @window_V_1_2, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%window_V_2_2_load = load i8* @window_V_2_2, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_2 : Operation 63 [1/2] (1.35ns)   --->   "%M_0_0_load = load i2* %M_0_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_5_cast = sext i2 %M_0_0_load to i10" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 65 [1/2] (1.35ns)   --->   "%M_0_1_load = load i3* %M_0_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%tmp_32_0_1 = sext i3 %M_0_1_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 67 [1/2] (1.35ns)   --->   "%M_0_2_load = load i2* %M_0_2_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_32_0_2_cast = sext i2 %M_0_2_load to i10" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 69 [1/2] (1.35ns)   --->   "%M_1_0_load = load i3* %M_1_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_32_1 = sext i3 %M_1_0_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 71 [1/2] (1.35ns)   --->   "%M_1_1_load = load i4* %M_1_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%tmp_32_1_1_cast = zext i4 %M_1_1_load to i12" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 73 [1/2] (1.35ns)   --->   "%M_1_2_load = load i3* %M_1_2_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_32_1_2_cast = sext i3 %M_1_2_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 75 [1/2] (1.35ns)   --->   "%M_2_0_load = load i2* %M_2_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_32_2_cast = sext i2 %M_2_0_load to i10" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 77 [1/2] (1.35ns)   --->   "%M_2_1_load = load i3* %M_2_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%tmp_32_2_1 = sext i3 %M_2_1_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 79 [1/2] (1.35ns)   --->   "%M_2_2_load = load i3* %M_2_2_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%tmp_32_2_2 = sext i3 %M_2_2_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 81 [1/2] (1.35ns)   --->   "%SumF_load = load i5* %SumF_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%i_op_assign_3_tr_tr_s = zext i5 %SumF_load to i14" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_2 : Operation 83 [1/2] (1.35ns)   --->   "%Offset_load = load i8* %Offset_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 8> <ROM>
+ST_2 : Operation 84 [1/1] (0.75ns)   --->   "store i8 %window_V_0_2_load, i8* %window_V_0_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_2 : Operation 85 [1/1] (0.75ns)   --->   "store i8 %window_V_1_2_load, i8* %window_V_1_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_2 : Operation 86 [1/1] (0.75ns)   --->   "store i8 %window_V_2_2_load, i8* %in_temp_V_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_2 : Operation 87 [1/1] (0.75ns)   --->   "br label %0" [FILTER_CONVOLUTION/Filter_convolution.cpp:42]
+
+ <State 3> : 2.85ns
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i19 [ 0, %codeRepl1 ], [ %indvar_flatten_next, %._crit_edge65 ]"
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%row = phi i9 [ 0, %codeRepl1 ], [ %row_mid2, %._crit_edge65 ]" [FILTER_CONVOLUTION/Filter_convolution.cpp:43]
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%col = phi i10 [ 0, %codeRepl1 ], [ %col_1, %._crit_edge65 ]"
+ST_3 : Operation 91 [1/1] (0.91ns)   --->   "%exitcond_flatten = icmp eq i19 %indvar_flatten, -215967"   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 92 [1/1] (1.05ns)   --->   "%indvar_flatten_next = add i19 %indvar_flatten, 1"   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 93 [1/1] (0.85ns)   --->   "%exitcond = icmp eq i10 %col, -383" [FILTER_CONVOLUTION/Filter_convolution.cpp:43]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 94 [1/1] (0.47ns)   --->   "%col_mid2 = select i1 %exitcond, i10 0, i10 %col" [FILTER_CONVOLUTION/Filter_convolution.cpp:43]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 95 [1/1] (0.92ns)   --->   "%row_s = add i9 %row, 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:42]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 96 [1/1] (0.85ns)   --->   "%tmp_4_mid1 = icmp ult i9 %row_s, -32" [FILTER_CONVOLUTION/Filter_convolution.cpp:73]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 97 [1/1] (0.85ns)   --->   "%tmp_4 = icmp ult i9 %row, -32" [FILTER_CONVOLUTION/Filter_convolution.cpp:73]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 98 [1/1] (0.26ns)   --->   "%tmp_4_mid2 = select i1 %exitcond, i1 %tmp_4_mid1, i1 %tmp_4" [FILTER_CONVOLUTION/Filter_convolution.cpp:73]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 99 [1/1] (0.85ns)   --->   "%tmp_6_mid1 = icmp ne i9 %row_s, 0" [FILTER_CONVOLUTION/Filter_convolution.cpp:81]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 100 [1/1] (0.85ns)   --->   "%tmp_5 = icmp ne i9 %row, 0" [FILTER_CONVOLUTION/Filter_convolution.cpp:81]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 101 [1/1] (0.26ns)   --->   "%tmp_6_mid2 = select i1 %exitcond, i1 %tmp_6_mid1, i1 %tmp_5" [FILTER_CONVOLUTION/Filter_convolution.cpp:81]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 102 [1/1] (0.45ns)   --->   "%row_mid2 = select i1 %exitcond, i9 %row_s, i9 %row" [FILTER_CONVOLUTION/Filter_convolution.cpp:43]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 103 [1/1] (0.85ns)   --->   "%tmp_8 = icmp ult i10 %col_mid2, -384" [FILTER_CONVOLUTION/Filter_convolution.cpp:54]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "br i1 %tmp_8, label %.preheader47.preheader, label %.loopexit" [FILTER_CONVOLUTION/Filter_convolution.cpp:54]
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%tmp_s = zext i10 %col_mid2 to i64" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%line_buffer_V_0_addr = getelementptr [640 x i8]* @line_buffer_V_0, i64 0, i64 %tmp_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]
+ST_3 : Operation 107 [2/2] (1.35ns)   --->   "%line_buffer_V_0_load = load i8* %line_buffer_V_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%line_buffer_V_1_addr = getelementptr [640 x i8]* @line_buffer_V_1, i64 0, i64 %tmp_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]
+ST_3 : Operation 109 [2/2] (1.35ns)   --->   "%line_buffer_V_1_load = load i8* %line_buffer_V_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_3 : Operation 110 [1/1] (0.33ns)   --->   "%tmp_2 = and i1 %tmp_8, %tmp_4_mid2" [FILTER_CONVOLUTION/Filter_convolution.cpp:73]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "br i1 %tmp_2, label %1, label %.loopexit._crit_edge" [FILTER_CONVOLUTION/Filter_convolution.cpp:73]
+ST_3 : Operation 112 [2/2] (0.00ns)   --->   "%in_temp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %in_img_V)" [FILTER_CONVOLUTION/Filter_convolution.cpp:75]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 113 [1/1] (0.85ns)   --->   "%tmp_7 = icmp ne i10 %col_mid2, 0" [FILTER_CONVOLUTION/Filter_convolution.cpp:81]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 114 [1/1] (0.33ns)   --->   "%or_cond = and i1 %tmp_6_mid2, %tmp_7" [FILTER_CONVOLUTION/Filter_convolution.cpp:81]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "br i1 %or_cond, label %mediaPixel.exit, label %._crit_edge65" [FILTER_CONVOLUTION/Filter_convolution.cpp:81]
+ST_3 : Operation 116 [1/1] (0.93ns)   --->   "%col_1 = add i10 %col_mid2, 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:43]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 4> : 2.70ns
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%in_temp_V_1_load = load i8* %in_temp_V_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%window_V_1_2_loc_1_l = load i8* %window_V_1_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%window_V_0_2_loc_1_l = load i8* %window_V_0_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %2, label %.reset"
+ST_4 : Operation 121 [1/2] (1.35ns)   --->   "%line_buffer_V_0_load = load i8* %line_buffer_V_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 122 [1/2] (1.35ns)   --->   "%line_buffer_V_1_load = load i8* %line_buffer_V_1_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "store i8 %line_buffer_V_0_load, i8* @window_V_0_2, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:63]
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "store i8 %line_buffer_V_1_load, i8* @window_V_1_2, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:63]
+ST_4 : Operation 125 [1/1] (1.35ns)   --->   "store i8 %line_buffer_V_1_load, i8* %line_buffer_V_0_addr, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:69]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 126 [1/1] (0.75ns)   --->   "store i8 %line_buffer_V_0_load, i8* %window_V_0_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]
+ST_4 : Operation 127 [1/1] (0.75ns)   --->   "store i8 %line_buffer_V_1_load, i8* %window_V_1_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:56]
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "br label %.loopexit"
+ST_4 : Operation 129 [1/2] (0.00ns)   --->   "%in_temp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %in_img_V)" [FILTER_CONVOLUTION/Filter_convolution.cpp:75]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "store i8 %in_temp_V, i8* @window_V_2_2, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:76]
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%tmp_9 = zext i10 %col_mid2 to i64" [FILTER_CONVOLUTION/Filter_convolution.cpp:77]
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%line_buffer_V_1_addr_1 = getelementptr [640 x i8]* @line_buffer_V_1, i64 0, i64 %tmp_9" [FILTER_CONVOLUTION/Filter_convolution.cpp:77]
+ST_4 : Operation 133 [1/1] (1.35ns)   --->   "store i8 %in_temp_V, i8* %line_buffer_V_1_addr_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:77]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 134 [1/1] (0.75ns)   --->   "store i8 %in_temp_V, i8* %in_temp_V_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:75]
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "br label %.loopexit._crit_edge" [FILTER_CONVOLUTION/Filter_convolution.cpp:78]
+
+ <State 5> : 8.54ns
+ST_5 : Operation 136 [1/1] (0.00ns)   --->   "%window_V_0_1_load = load i8* @window_V_0_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "store i8 %window_V_0_2_loc_1_l, i8* @window_V_0_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_5 : Operation 138 [1/1] (0.00ns)   --->   "%window_V_1_1_load = load i8* @window_V_1_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "store i8 %window_V_1_2_loc_1_l, i8* @window_V_1_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "%window_V_2_1_load = load i8* @window_V_2_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_5 : Operation 141 [1/1] (0.00ns)   --->   "store i8 %in_temp_V_1_load, i8* @window_V_2_1, align 1" [FILTER_CONVOLUTION/Filter_convolution.cpp:50]
+ST_5 : Operation 142 [1/1] (0.00ns)   --->   "%in_temp_V_1_load_1 = load i8* %in_temp_V_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 143 [1/1] (0.00ns)   --->   "%window_V_1_2_loc_1_l_1 = load i8* %window_V_1_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 144 [1/1] (0.00ns)   --->   "%window_V_0_2_loc_1_l_1 = load i8* %window_V_0_2_loc_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 145 [1/1] (0.00ns)   --->   "%tmp_11_cast = zext i8 %window_V_0_1_load to i10" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 146 [1/1] (0.63ns)   --->   "%tmp_6 = mul i10 %tmp_11_cast, %tmp_5_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 147 [1/1] (0.00ns)   --->   "%tmp_12_cast = sext i10 %tmp_6 to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 148 [1/1] (0.00ns)   --->   "%tmp_31_0_1 = zext i8 %window_V_0_2_loc_1_l to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 149 [1/1] (2.17ns)   --->   "%tmp_33_0_1 = mul i11 %tmp_31_0_1, %tmp_32_0_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 150 [1/1] (0.00ns)   --->   "%tmp_31_0_2_cast = zext i8 %window_V_0_2_loc_1_l_1 to i10" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 151 [1/1] (0.63ns)   --->   "%tmp_33_0_2 = mul i10 %tmp_31_0_2_cast, %tmp_32_0_2_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 152 [1/1] (0.00ns)   --->   "%tmp_33_0_2_cast = sext i10 %tmp_33_0_2 to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_31_1 = zext i8 %window_V_1_1_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 154 [1/1] (2.17ns)   --->   "%tmp_33_1 = mul i11 %tmp_31_1, %tmp_32_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 155 [1/1] (0.00ns)   --->   "%tmp_31_1_1_cast = zext i8 %window_V_1_2_loc_1_l to i12" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 156 [1/1] (2.17ns)   --->   "%tmp_33_1_1 = mul i12 %tmp_31_1_1_cast, %tmp_32_1_1_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 157 [1/1] (0.00ns)   --->   "%tmp_33_1_1_cast = zext i12 %tmp_33_1_1 to i13" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_31_1_2_cast = zext i8 %window_V_1_2_loc_1_l_1 to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 159 [1/1] (0.63ns)   --->   "%tmp_33_1_2 = mul i11 %tmp_31_1_2_cast, %tmp_32_1_2_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 160 [1/1] (0.00ns)   --->   "%tmp_33_1_2_cast = sext i11 %tmp_33_1_2 to i13" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 161 [1/1] (0.00ns)   --->   "%tmp_31_2_cast = zext i8 %window_V_2_1_load to i10" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 162 [1/1] (0.63ns)   --->   "%tmp_33_2 = mul i10 %tmp_31_2_cast, %tmp_32_2_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 163 [1/1] (0.00ns)   --->   "%tmp_33_2_cast = sext i10 %tmp_33_2 to i12" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_31_2_1 = zext i8 %in_temp_V_1_load to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 165 [1/1] (0.63ns)   --->   "%tmp_33_2_1 = mul i11 %tmp_31_2_1, %tmp_32_2_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 166 [1/1] (0.00ns)   --->   "%tmp_31_2_2 = zext i8 %in_temp_V_1_load_1 to i11" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 167 [1/1] (2.17ns)   --->   "%tmp_33_2_2 = mul i11 %tmp_31_2_2, %tmp_32_2_2" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 168 [1/1] (2.20ns)   --->   "%tmp2 = add i11 %tmp_33_0_1, %tmp_12_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 169 [1/1] (0.00ns)   --->   "%tmp2_cast = sext i11 %tmp2 to i12" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 170 [1/1] (2.20ns)   --->   "%tmp3 = add i11 %tmp_33_1, %tmp_33_0_2_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 171 [1/1] (0.00ns)   --->   "%tmp3_cast = sext i11 %tmp3 to i12" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 172 [1/1] (0.94ns)   --->   "%tmp1 = add i12 %tmp2_cast, %tmp3_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 173 [1/1] (0.00ns)   --->   "%tmp1_cast = sext i12 %tmp1 to i14" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 174 [1/1] (2.20ns)   --->   "%tmp5 = add i13 %tmp_33_1_2_cast, %tmp_33_1_1_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 175 [1/1] (2.20ns)   --->   "%tmp7 = add i11 %tmp_33_2_2, %tmp_33_2_1" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 176 [1/1] (0.00ns)   --->   "%tmp7_cast = sext i11 %tmp7 to i12" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 177 [1/1] (2.20ns)   --->   "%tmp6 = add i12 %tmp_33_2_cast, %tmp7_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.84> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 178 [1/1] (0.00ns)   --->   "%tmp6_cast = sext i12 %tmp6 to i13" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 179 [1/1] (0.97ns)   --->   "%tmp4 = add i13 %tmp5, %tmp6_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 180 [1/1] (0.00ns)   --->   "%tmp4_cast = sext i13 %tmp4 to i14" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_5 : Operation 181 [1/1] (0.97ns)   --->   "%out_temp_V_215_2 = add i14 %tmp1_cast, %tmp4_cast" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 6> : 1.62ns
+ST_6 : Operation 182 [18/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 7> : 1.62ns
+ST_7 : Operation 183 [17/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 8> : 1.62ns
+ST_8 : Operation 184 [16/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 9> : 1.62ns
+ST_9 : Operation 185 [15/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 10> : 1.62ns
+ST_10 : Operation 186 [14/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 11> : 1.62ns
+ST_11 : Operation 187 [13/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 12> : 1.62ns
+ST_12 : Operation 188 [12/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 13> : 1.62ns
+ST_13 : Operation 189 [11/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 14> : 1.62ns
+ST_14 : Operation 190 [10/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 15> : 1.62ns
+ST_15 : Operation 191 [9/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 16> : 1.62ns
+ST_16 : Operation 192 [8/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 17> : 1.62ns
+ST_17 : Operation 193 [7/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 18> : 1.62ns
+ST_18 : Operation 194 [6/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 19> : 1.62ns
+ST_19 : Operation 195 [5/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 20> : 1.62ns
+ST_20 : Operation 196 [4/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 21> : 1.62ns
+ST_21 : Operation 197 [3/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 22> : 1.62ns
+ST_22 : Operation 198 [2/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 23> : 2.53ns
+ST_23 : Operation 199 [1/18] (1.61ns)   --->   "%tmp_10 = sdiv i14 %out_temp_V_215_2, %i_op_assign_3_tr_tr_s" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 23 'DivnS' <Latency = 17> <II = 1> <Delay = 1.61> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 200 [1/1] (0.00ns)   --->   "%tmp = trunc i14 %tmp_10 to i8" [FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84]
+ST_23 : Operation 201 [1/1] (0.90ns)   --->   "%tmp_11 = add i8 %tmp, %Offset_load" [FILTER_CONVOLUTION/Filter_convolution.cpp:16->FILTER_CONVOLUTION/Filter_convolution.cpp:84]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 202 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %out_img_V, i8 %tmp_11)" [FILTER_CONVOLUTION/Filter_convolution.cpp:85]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+ <State 24> : 0.00ns
+ST_24 : Operation 203 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @Loop_row_Loop_col_st)"
+ST_24 : Operation 204 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str8) nounwind" [FILTER_CONVOLUTION/Filter_convolution.cpp:45]
+ST_24 : Operation 205 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str8)" [FILTER_CONVOLUTION/Filter_convolution.cpp:45]
+ST_24 : Operation 206 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [FILTER_CONVOLUTION/Filter_convolution.cpp:46]
+ST_24 : Operation 207 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %out_img_V, i8 %tmp_11)" [FILTER_CONVOLUTION/Filter_convolution.cpp:85]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_24 : Operation 208 [1/1] (0.00ns)   --->   "br label %._crit_edge65" [FILTER_CONVOLUTION/Filter_convolution.cpp:86]
+ST_24 : Operation 209 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str8, i32 %tmp_1)" [FILTER_CONVOLUTION/Filter_convolution.cpp:88]
+ST_24 : Operation 210 [1/1] (0.00ns)   --->   "br label %0"
+
+ <State 25> : 0.00ns
+ST_25 : Operation 211 [1/1] (0.00ns)   --->   "ret void" [FILTER_CONVOLUTION/Filter_convolution.cpp:91]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	wire read on port 'id_filter_V' [30]  (0 ns)
+	'getelementptr' operation ('M_1_2_addr', FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [53]  (0 ns)
+	'load' operation ('M_1_2_load', FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84) on array 'M_1_2' [54]  (1.35 ns)
+
+ <State 2>: 1.35ns
+The critical path consists of the following:
+	'load' operation ('M_0_0_load', FILTER_CONVOLUTION/Filter_convolution.cpp:12->FILTER_CONVOLUTION/Filter_convolution.cpp:84) on array 'M_0_0' [39]  (1.35 ns)
+
+ <State 3>: 2.85ns
+The critical path consists of the following:
+	'phi' operation ('col') with incoming values : ('col', FILTER_CONVOLUTION/Filter_convolution.cpp:43) [77]  (0 ns)
+	'icmp' operation ('exitcond', FILTER_CONVOLUTION/Filter_convolution.cpp:43) [86]  (0.859 ns)
+	'select' operation ('col_mid2', FILTER_CONVOLUTION/Filter_convolution.cpp:43) [87]  (0.47 ns)
+	'getelementptr' operation ('line_buffer_V_0_addr', FILTER_CONVOLUTION/Filter_convolution.cpp:56) [109]  (0 ns)
+	'load' operation ('line_buffer_V_0_load', FILTER_CONVOLUTION/Filter_convolution.cpp:56) on array 'line_buffer_V_0' [110]  (1.35 ns)
+	blocking operation 0.168 ns on control path)
+
+ <State 4>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('line_buffer_V_1_load', FILTER_CONVOLUTION/Filter_convolution.cpp:56) on array 'line_buffer_V_1' [112]  (1.35 ns)
+	'store' operation (FILTER_CONVOLUTION/Filter_convolution.cpp:69) of variable 'line_buffer_V_1_load', FILTER_CONVOLUTION/Filter_convolution.cpp:56 on array 'line_buffer_V_0' [115]  (1.35 ns)
+
+ <State 5>: 8.54ns
+The critical path consists of the following:
+	'load' operation ('in_temp_V_1_load_1', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) on local variable 'in_temp.V' [135]  (0 ns)
+	'mul' operation ('tmp_33_2_2', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [160]  (2.17 ns)
+	'add' operation ('tmp7', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [168]  (2.21 ns)
+	'add' operation ('tmp6', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [170]  (2.21 ns)
+	'add' operation ('tmp4', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [172]  (0.975 ns)
+	'add' operation ('out_temp_V_215_2', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [174]  (0.975 ns)
+
+ <State 6>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 7>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 8>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 9>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 10>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 11>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 12>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 13>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 14>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 15>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 16>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 17>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 18>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 19>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 20>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 21>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 22>: 1.62ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+
+ <State 23>: 2.53ns
+The critical path consists of the following:
+	'sdiv' operation ('tmp_10', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [175]  (1.62 ns)
+	'add' operation ('tmp_11', FILTER_CONVOLUTION/Filter_convolution.cpp:16->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [177]  (0.907 ns)
+
+ <State 24>: 0ns
+The critical path consists of the following:
+
+ <State 25>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

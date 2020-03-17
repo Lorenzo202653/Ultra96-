@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;DDR_TO_AXIS_READER_AXILITE_SD/ddr_to_axis_reader_SD.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1378" content="In file included from DDR_TO_AXIS_READER_AXILITE_SD/ddr_to_axis_reader_SD.cpp:1:
+In file included from DDR_TO_AXIS_READER_AXILITE_SD/ddr_to_axis_reader_SD.h:2:
+In file included from /media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_int.h:60:
+In file included from /media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/common/technology/autopilot/hls_half.h:32:
+In file included from /media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:42:
+In file included from /media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++config.h:393:
+/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/os_defines.h:40:10: fatal error: &apos;features.h&apos; file not found
+#include &lt;features.h&gt;
+         ^
+1 error generated." tag=""/>
+	<Message prefix="[HLS 200-150]" severity="INFO" keynum="11" content="C preprocessor failed.
+    while executing
+&quot;source /home/kidre/Immagini/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE_SD/solution1/csynth.tcl&quot;
+    invoked from within
+&quot;hls::main /home/kidre/Immagini/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE_SD/solution1/csynth.tcl&quot;
+    (&quot;uplevel&quot; body line 1)
+    invoked from within
+&quot;uplevel 1 hls::main {*}$args&quot;
+    (procedure &quot;hls_proc&quot; line 5)
+    invoked from within
+&quot;hls_proc $argv&quot;" tag=""/>
+</Messages>

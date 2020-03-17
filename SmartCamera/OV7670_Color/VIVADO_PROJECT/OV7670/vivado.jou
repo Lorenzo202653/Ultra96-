@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Sep  6 17:40:02 2019
+# Process ID: 21428
+# Current directory: /home/andrea/Documenti/vision/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670
+# Command line: vivado OV7670.xpr
+# Log file: /home/andrea/Documenti/vision/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/vivado.log
+# Journal file: /home/andrea/Documenti/vision/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/andrea/Documenti/vision/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/andrea/Documenti/vision/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/design_1.bd}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_6' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.389+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_5' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.379+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'convolution_buffer_V_6' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.372+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_4' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.366+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'convolution_buffer_V_5' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.360+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_3' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.354+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'convolution_buffer_V_4' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.348+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_2' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.342+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'convolution_buffer_V_3' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.335+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_1' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.329+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'convolution_buffer_V_2' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.322+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'convolution_buffer_V_1' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.314+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_6' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.308+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_5' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.301+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_4' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.295+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_3' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.289+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_2' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.283+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_1' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.278+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_6' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.272+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_5' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.266+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_4' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.259+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_3' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.253+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_2' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.248+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_1' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.243+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_0' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.238+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_off_V' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.234+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_sum_V' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.229+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_v_V_0' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.225+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kernel_h_V_0' is power-on initialization." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:05.219+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'ap_ovld' on port 'kernel_config_V' changing to the default 'ap_memory' mode." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:04.707+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'out_img.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:03.431+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'in_img.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="Sep_Convolution_Filter" solutionName="solution1" date="2020-03-10T11:11:02.809+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

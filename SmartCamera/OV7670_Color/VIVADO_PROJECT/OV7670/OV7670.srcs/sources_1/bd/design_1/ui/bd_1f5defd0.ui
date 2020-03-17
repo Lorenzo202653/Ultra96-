@@ -1,0 +1,90 @@
+{
+   ExpandedHierarchyInLayout: "",
+   commentid: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 470 -defaultsOSRD
+preplace port XCLK -pg 1 -y 740 -defaultsOSRD
+preplace port PCLK -pg 1 -y 450 -defaultsOSRD
+preplace port reset_sw -pg 1 -y 80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 490 -defaultsOSRD
+preplace portBus LED_FRAME_VALID -pg 1 -y 950 -defaultsOSRD
+preplace portBus V_SYNC_V -pg 1 -y 870 -defaultsOSRD
+preplace portBus OV7670_RESET -pg 1 -y 170 -defaultsOSRD
+preplace portBus href_V -pg 1 -y 870 -defaultsOSRD
+preplace portBus selftest -pg 1 -y 1170 -defaultsOSRD
+preplace portBus R_V -pg 1 -y 810 -defaultsOSRD
+preplace portBus data_in_V -pg 1 -y 840 -defaultsOSRD
+preplace portBus H_SYNC_V -pg 1 -y 890 -defaultsOSRD
+preplace portBus B_V -pg 1 -y 850 -defaultsOSRD
+preplace portBus vsync_V -pg 1 -y 900 -defaultsOSRD
+preplace portBus G_V -pg 1 -y 830 -defaultsOSRD
+preplace inst VDMA -pg 1 -lvl 4 -y 520 -defaultsOSRD
+preplace inst ENABLE_RAW_STREAM -pg 1 -lvl 1 -y 610 -defaultsOSRD
+preplace inst const_true -pg 1 -lvl 1 -y 510 -defaultsOSRD
+preplace inst Convolution_Filter -pg 1 -lvl 3 -y 500 -defaultsOSRD
+preplace inst axi_stream_to_vga_0 -pg 1 -lvl 5 -y 850 -defaultsOSRD
+preplace inst clk_gen_25M_24M -pg 1 -lvl 4 -y 800 -defaultsOSRD
+preplace inst axi_gpio_frame_intr -pg 1 -lvl 3 -y 230 -defaultsOSRD
+preplace inst xlconcat -pg 1 -lvl 4 -y 70 -defaultsOSRD
+preplace inst reset_25M -pg 1 -lvl 3 -y 730 -defaultsOSRD
+preplace inst reset_100M -pg 1 -lvl 2 -y 1070 -defaultsOSRD
+preplace inst reset_24M -pg 1 -lvl 1 -y 750 -defaultsOSRD
+preplace inst const_1 -pg 1 -lvl 1 -y 140 -defaultsOSRD
+preplace inst axi_gpio_pl_reset -pg 1 -lvl 5 -y 160 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS -pg 1 -lvl 2 -y 830 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 560 -defaultsOSRD
+preplace netloc clk_gen_25M_23M_clk_out2 1 4 2 1920J 740 NJ
+preplace netloc processing_system7_0_DDR 1 5 1 NJ
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_LUMA 1 2 2 980 630 1410J
+preplace netloc AXIS_IN_1 1 3 1 1390
+preplace netloc axis_data_fifo_reader_to_vga_M_AXIS 1 4 1 1880
+preplace netloc selftest_1 1 0 5 NJ 1170 NJ 1170 NJ 1170 NJ 1170 1890J
+preplace netloc PCLK_1 1 0 5 50 450 450 610 960 590 1370 720 1890
+preplace netloc reset_25M_peripheral_aresetn 1 3 2 1450 880 NJ
+preplace netloc axi_stream_to_vga_0_G_V 1 5 1 NJ
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 910
+preplace netloc href_V_1 1 0 2 NJ 870 NJ
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 2 NJ 350 1430
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 470 110 950J 320 NJ 320 NJ 320 2400
+preplace netloc axi_stream_to_vga_0_R_V 1 5 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP1 1 1 5 480 970 NJ 970 NJ 970 NJ 970 2400
+preplace netloc ap_start_1 1 1 4 440 620 980 610 1430 730 1870J
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 2 900J 380 1360
+preplace netloc data_in_V_1 1 0 2 40J 860 450J
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 N
+preplace netloc axi_stream_to_vga_0_H_SYNC_V 1 5 1 NJ
+preplace netloc reset_24M_peripheral_reset 1 1 1 410
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 2 970 400 1400J
+preplace netloc axi_gpio_frame_intr_ip2intc_irpt 1 3 1 1380
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 2 NJ 330 1450
+preplace netloc vsync_V_1 1 0 2 NJ 900 440J
+preplace netloc xlconstant_0_dout 1 1 4 460 100 970J 150 NJ 150 1930J
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_Q 1 2 4 900J 950 NJ 950 NJ 950 NJ
+preplace netloc axis_to_ddr_writer_0_frame_index_V 1 3 2 NJ 230 1870
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 2 1 930
+preplace netloc axi_stream_to_vga_0_B_V 1 5 1 NJ
+preplace netloc xlconcat_0_dout 1 4 1 1910
+preplace netloc clk_wiz_0_clk_out1 1 2 3 1000 840 1440 870 1860
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_V_V 1 2 1 950
+preplace netloc ext_reset_in_1 1 0 6 50 850 410 960 940 310 NJ 310 NJ 310 2400
+preplace netloc ENABLE_RAW_STREAM_dout 1 1 1 420J
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_AXIM_READER_SD 1 2 3 910J 890 NJ 890 1900
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
+preplace netloc axi_mem_intercon_reader_M00_AXI 1 4 1 1900
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 430 600 990 600 1360J
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 2 990 620 NJ
+preplace netloc CLOCK_100M_1 1 1 5 470 590 920 390 1380 710 1920 730 2390
+preplace netloc axi_stream_to_vga_0_V_SYNC_V 1 5 1 NJ
+preplace netloc reset_sw_1 1 0 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 2 NJ 370 1420
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_CHROMA 1 2 2 N 830 1420J
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 3 900 140 NJ 140 NJ
+levelinfo -pg 1 0 230 690 1180 1650 2160 2420 -top 0 -bot 1190
+",
+}
+{
+   da_axi4_cnt: "12",
+   da_ps7_cnt: "1",
+}
