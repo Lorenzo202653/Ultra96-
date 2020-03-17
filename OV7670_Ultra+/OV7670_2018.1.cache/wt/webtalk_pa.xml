@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Mar 17 09:26:14 2020">
+<application name="pa" timeStamp="Tue Mar 17 12:25:27 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a714219a36b3435e969316a3c35a0710" type="ProjectID"/>
 <property name="ProjectIteration" value="191" type="ProjectIteration"/>
@@ -24,7 +24,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CloseProject" value="4" type="JavaHandler"/>
 <property name="CloseServer" value="2" type="JavaHandler"/>
 <property name="CloseTarget" value="1" type="JavaHandler"/>
-<property name="CoreView" value="28" type="JavaHandler"/>
+<property name="CoreView" value="29" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="10" type="JavaHandler"/>
 <property name="CreateDebugCore" value="1" type="JavaHandler"/>
 <property name="CreateTopHDL" value="1" type="JavaHandler"/>
@@ -143,7 +143,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FileSetView_EXPAND_ALL" value="1" type="GuiHandlerData"/>
 <property name="FilterToolBar_HIDE_ALL" value="3" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="3" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="147" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="148" type="GuiHandlerData"/>
 <property name="GICTreeTablePanel_GIC_TREE_TABLE" value="4" type="GuiHandlerData"/>
 <property name="GenSettingMainPanel_EXPAND_ALL" value="8" type="GuiHandlerData"/>
 <property name="GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE" value="26" type="GuiHandlerData"/>
@@ -313,9 +313,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TclObjectTreeTable_TREETABLE" value="48" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="26" type="GuiMode"/>
+<property name="GuiMode" value="27" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="18" type="TclMode"/>
+<property name="TclMode" value="19" type="TclMode"/>
 </item>
 </section>
 </application>
