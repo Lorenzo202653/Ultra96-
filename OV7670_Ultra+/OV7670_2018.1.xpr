@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="/home/kidre/Musica/prova4/Ultra96-/OV7670_Ultra+/OV7670_2018.1.xpr">
+<Project Version="7" Minor="36" Path="/home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3e637aaa1825485588501ded328e63a3"/>
@@ -21,18 +21,18 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/FILTERS/Configurable_Convolution_Filter"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/FILTERS/Sep_Convolution_Filter"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_LUMA_CHROMA"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_GRAYSCALE"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/LF_VALID_TO_AXIS"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/VGA/AXI_STREAM_TO_VGA"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/VIDEO_STREAM_MUX"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE_SD"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/FILTERS/Configurable_Convolution_Filter"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/FILTERS/FILTER_CONVOLUTION"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/FILTERS/Sep_Convolution_Filter"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_GRAYSCALE"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_LUMA_CHROMA"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/LF_VALID_TO_AXIS"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/VGA/AXI_STREAM_TO_VGA"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/VIDEO_STREAM_MUX"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE_SD"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
