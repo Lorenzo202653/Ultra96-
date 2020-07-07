@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 16 17:22:54 2020" VIVADOVERSION="2018.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jun 29 16:10:14 2020" VIVADOVERSION="2018.1">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="em.avnet.com:ultra96:part0:1.0" DEVICE="xczu3eg" NAME="design_1" PACKAGE="sbva484" SPEEDGRADE="-1"/>
 
@@ -7848,7 +7848,7 @@
             <CONNECTION INSTANCE="const_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_frame_intr_s_axi_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_frame_intr_s_axi_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_frame_intr" PORT="s_axi_araddr"/>
           </CONNECTIONS>
@@ -7863,7 +7863,7 @@
             <CONNECTION INSTANCE="axi_gpio_frame_intr" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_frame_intr_s_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_frame_intr_s_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_frame_intr" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
@@ -7933,7 +7933,7 @@
             <CONNECTION INSTANCE="axi_gpio_frame_intr" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_pl_reset_s_axi_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_pl_reset_s_axi_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_pl_reset" PORT="s_axi_araddr"/>
           </CONNECTIONS>
@@ -7948,7 +7948,7 @@
             <CONNECTION INSTANCE="axi_gpio_pl_reset" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_pl_reset_s_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_pl_reset_s_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_pl_reset" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
@@ -8254,7 +8254,7 @@
         <PORT DIR="I" NAME="M06_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef"/>
         <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="39" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_CHROMA_s_axi_AXILiteS_AWADDR">
+        <PORT DIR="O" LEFT="31" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_CHROMA_s_axi_AXILiteS_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_CHROMA" PORT="s_axi_AXILiteS_AWADDR"/>
           </CONNECTIONS>
@@ -8305,7 +8305,7 @@
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_CHROMA" PORT="s_axi_AXILiteS_BREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_CHROMA_s_axi_AXILiteS_ARADDR">
+        <PORT DIR="O" LEFT="31" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_CHROMA_s_axi_AXILiteS_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_CHROMA" PORT="s_axi_AXILiteS_ARADDR"/>
           </CONNECTIONS>
@@ -8341,7 +8341,7 @@
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_CHROMA" PORT="s_axi_AXILiteS_RREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_LUMA_s_axi_AXILiteS_AWADDR">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_LUMA_s_axi_AXILiteS_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_LUMA" PORT="s_axi_AXILiteS_AWADDR"/>
           </CONNECTIONS>
@@ -8392,7 +8392,7 @@
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_LUMA" PORT="s_axi_AXILiteS_BREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_LUMA_s_axi_AXILiteS_ARADDR">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_LUMA_s_axi_AXILiteS_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_LUMA" PORT="s_axi_AXILiteS_ARADDR"/>
           </CONNECTIONS>
@@ -8428,7 +8428,7 @@
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_LUMA" PORT="s_axi_AXILiteS_RREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_ddr_to_axis_reader_0_s_axi_AXILiteS_AWADDR">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_ddr_to_axis_reader_0_s_axi_AXILiteS_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_ddr_to_axis_reader_0" PORT="s_axi_AXILiteS_AWADDR"/>
           </CONNECTIONS>
@@ -8479,7 +8479,7 @@
             <CONNECTION INSTANCE="VDMA_ddr_to_axis_reader_0" PORT="s_axi_AXILiteS_BREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_ddr_to_axis_reader_0_s_axi_AXILiteS_ARADDR">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_ddr_to_axis_reader_0_s_axi_AXILiteS_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_ddr_to_axis_reader_0" PORT="s_axi_AXILiteS_ARADDR"/>
           </CONNECTIONS>
@@ -8515,7 +8515,7 @@
             <CONNECTION INSTANCE="VDMA_ddr_to_axis_reader_0" PORT="s_axi_AXILiteS_RREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_0_s_axi_AXILiteS_AWADDR">
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_0_s_axi_AXILiteS_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_0" PORT="s_axi_AXILiteS_AWADDR"/>
           </CONNECTIONS>
@@ -8566,7 +8566,7 @@
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_0" PORT="s_axi_AXILiteS_BREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="39" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_0_s_axi_AXILiteS_ARADDR">
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="VDMA_axis_to_ddr_writer_0_s_axi_AXILiteS_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="VDMA_axis_to_ddr_writer_0" PORT="s_axi_AXILiteS_ARADDR"/>
           </CONNECTIONS>

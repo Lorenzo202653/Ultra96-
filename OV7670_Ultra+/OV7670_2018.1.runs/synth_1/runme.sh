@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/SDK/2018.1/bin:/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/lin64:/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/bin
+  PATH=/opt/Xilinx/SDK/2018.1/bin:/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2018.1/bin
 else
-  PATH=/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/SDK/2018.1/bin:/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/lin64:/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/bin:$PATH
+  PATH=/opt/Xilinx/SDK/2018.1/bin:/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2018.1/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/media/kidre/8a0a81cd-859e-4c75-9e65-2b4a729982e4/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/kidre/Immagini/Università/Uni/Tesi/Ultra96-/OV7670_Ultra+/OV7670_2018.1.runs/synth_1'
+HD_PWD='/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

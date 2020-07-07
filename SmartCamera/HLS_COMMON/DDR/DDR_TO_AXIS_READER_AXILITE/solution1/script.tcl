@@ -5,8 +5,8 @@
 ############################################################
 open_project DDR_TO_AXIS_READER_AXILITE
 set_top ddr_to_axis_reader
-add_files DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.cpp
 add_files DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.h
+add_files DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.cpp
 add_files -tb DDR_TO_AXIS_READER_AXILITE/testbench.cpp
 open_solution "solution1"
 set_part {xczu3eg-sbva484-1-e}

@@ -26,6 +26,7 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.911997120" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.45650617" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include"/>
@@ -43,6 +44,7 @@
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1268174080" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1125080636" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include"/>
@@ -110,6 +112,7 @@
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.193900257" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.518872876" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include"/>
@@ -122,6 +125,7 @@
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.782061660" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1099490267" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.1/include"/>

@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/.apc/.src</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/.apc/.tb</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/.tcls</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/ddr_to_axis_reader.cpp</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.cpp</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.cpp</location>
 		</link>
 		<link>
 			<name>source/ddr_to_axis_reader.h</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.h</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.h</location>
 		</link>
 		<link>
 			<name>testbench/testbench.cpp</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/testbench.cpp</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/testbench.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/solution1.directive</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/directives.tcl</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/script.tcl</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

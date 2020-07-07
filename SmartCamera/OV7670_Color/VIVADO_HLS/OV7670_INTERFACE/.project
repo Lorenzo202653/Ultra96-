@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/.apc/.src</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/.apc/.tb</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/.tcls</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/ov7670_interface.cpp</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.cpp</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.cpp</location>
 		</link>
 		<link>
 			<name>source/ov7670_interface.h</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.h</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.h</location>
 		</link>
 		<link>
 			<name>testbench/test_ov7670_interface.cpp</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/test_ov7670_interface.cpp</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/test_ov7670_interface.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/solution1.directive</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/directives.tcl</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/script.tcl</location>
+			<location>/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Webtalk v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # 
-# Start of session at: Wed May 22 18:13:34 2019
-# Process ID: 20073
-# Current directory: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.sdk/webtalk
+# Start of session at: Wed Apr  8 11:03:17 2020
+# Process ID: 11664
+# Current directory: /home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
-# Log file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.sdk/webtalk/webtalk.log
-# Journal file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.sdk/webtalk/webtalk.jou
+# Log file: /home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk/webtalk.log
+# Journal file: /home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

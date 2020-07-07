@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="/home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.xpr">
+<Project Version="7" Minor="36" Path="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3e637aaa1825485588501ded328e63a3"/>
@@ -114,6 +114,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0.upgrade_log"/>
           <Attr Name="ImportTime" Val="1559548847"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/design_2/design_2.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>

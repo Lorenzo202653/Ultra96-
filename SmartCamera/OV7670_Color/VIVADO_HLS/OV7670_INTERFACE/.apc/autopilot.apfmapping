@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="ov7670_interface.cpp" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.cpp"/>
-    <originFiles name="ov7670_interface.h" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.h"/>
+    <originFiles name="ov7670_interface.h" path="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.h"/>
+    <originFiles name="ov7670_interface.cpp" path="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/ov7670_interface.cpp"/>
   </source>
   <testbench>
-    <originFiles name="test_ov7670_interface.cpp" path="/home/kidre/Documenti/Università/Uni/Tesi/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/test_ov7670_interface.cpp"/>
+    <originFiles name="test_ov7670_interface.cpp" path="/home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/SmartCamera/OV7670_Color/VIVADO_HLS/OV7670_INTERFACE/test_ov7670_interface.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -11,54 +11,107 @@ preplace portBus OV7670_RESET -pg 1 -y 660 -defaultsOSRD
 preplace portBus href_V -pg 1 -y 430 -defaultsOSRD
 preplace portBus data_in_V -pg 1 -y 460 -defaultsOSRD
 preplace portBus vsync_V -pg 1 -y 400 -defaultsOSRD
-preplace inst VDMA -pg 1 -lvl 3 -y 368 -defaultsOSRD
+preplace inst VDMA -pg 1 -lvl 3 -y 386 -defaultsOSRD
 preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 4 -y 120 -defaultsOSRD
+preplace inst VDMA|axis_to_ddr_writer_LUMA -pg 1 -lvl 2 -y 676 -defaultsOSRD
+preplace inst VDMA|axis_to_ddr_writer_CHROMA -pg 1 -lvl 2 -y 836 -defaultsOSRD
+preplace inst VDMA|axis_data_fifo_raw_CHROMA -pg 1 -lvl 1 -y 906 -defaultsOSRD
+preplace inst VDMA|axi_mem_intercon_reader -pg 1 -lvl 3 -y 366 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS|c_counter_binary_0 -pg 1 -lvl 3 -y 692 -defaultsOSRD
 preplace inst ENABLE_RAW_STREAM -pg 1 -lvl 1 -y 350 -defaultsOSRD
 preplace inst const_true -pg 1 -lvl 1 -y 250 -defaultsOSRD
+preplace inst VDMA|axis_to_ddr_writer_0 -pg 1 -lvl 2 -y 486 -defaultsOSRD
+preplace inst VDMA|axi_mem_intercon_writer -pg 1 -lvl 3 -y 726 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0 -pg 1 -lvl 3 -y 412 -defaultsOSRD
+preplace inst VDMA|ddr_to_axis_reader_0 -pg 1 -lvl 2 -y 306 -defaultsOSRD
 preplace inst clk_gen_25M_24M -pg 1 -lvl 5 -y 730 -defaultsOSRD
 preplace inst axi_gpio_frame_intr -pg 1 -lvl 6 -y 350 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS|LF_valid_to_AXIS -pg 1 -lvl 2 -y 572 -defaultsOSRD
 preplace inst xlconcat -pg 1 -lvl 7 -y 940 -defaultsOSRD
 preplace inst reset_25M -pg 1 -lvl 7 -y 760 -defaultsOSRD
+preplace inst VDMA|axis_data_fifo_pipeline_to_writer -pg 1 -lvl 1 -y 506 -defaultsOSRD
 preplace inst reset_100M -pg 1 -lvl 7 -y 550 -defaultsOSRD
 preplace inst reset_24M -pg 1 -lvl 7 -y 320 -defaultsOSRD
 preplace inst const_1 -pg 1 -lvl 5 -y 880 -defaultsOSRD
 preplace inst axi_gpio_pl_reset -pg 1 -lvl 6 -y 800 -defaultsOSRD
-preplace inst OV7670_GRAYSCALE_TO_AXIS -pg 1 -lvl 2 -y 400 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS -pg 1 -lvl 2 -y 402 -defaultsOSRD
+preplace inst VDMA|axis_data_fifo_raw_LUMA -pg 1 -lvl 1 -y 706 -defaultsOSRD
+preplace inst OV7670_GRAYSCALE_TO_AXIS|ov7670_interface_0 -pg 1 -lvl 1 -y 612 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 5 -y 390 -defaultsOSRD
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_LUMA 1 2 1 730
-preplace netloc clk_gen_25M_23M_clk_out2 1 5 3 2360J 690 2740J 650 3110J
-preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 4 800 148 1270J 240 1930J 120 2340
+preplace netloc VDMA|s_axi_AXILiteS_1 1 0 2 NJ 256 2620
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ap_start_1 1 0 3 510 432 900 382 NJ
+preplace netloc VDMA|AXIS_IN_RAW_LUMA_1 1 0 1 2260
+preplace netloc VDMA|AXIS_IN_RAW_CHROMA_1 1 0 1 N
+preplace netloc VDMA|PCLK_1 1 0 1 2250
+preplace netloc VDMA_AXIM_READER 1 3 1 3600
+preplace netloc reset_24M_peripheral_reset 1 1 7 300 98 1930J 96 3590J 280 4370J 100 NJ 100 NJ 100 5500
+preplace netloc VDMA|rst_processing_system7_0_100M_interconnect_aresetn 1 0 3 NJ 1026 NJ 1026 3070
+preplace netloc VDMA|s_axi_AXILiteS1_1 1 0 2 NJ 276 N
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|href_V_1 1 0 1 480
+preplace netloc reset_sw_1 1 0 7 NJ 950 280J 1214 1980J 1490 3680J 950 NJ 950 NJ 950 NJ
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|reset_24M_peripheral_reset 1 0 1 510
+preplace netloc VDMA|axis_data_fifo_pipeline_to_writer_M_AXIS 1 1 1 N
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_LUMA 1 2 1 1960
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|c_counter_binary_0_THRESH0 1 3 1 NJ
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0_outStream_LUMA_V_V 1 3 1 N
+preplace netloc VDMA|s_axi_AXILite_raw_LUMA_1 1 0 2 NJ 606 2600
+preplace netloc VDMA|aresetn_in_1 1 0 1 2230
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 4 2000 0 NJ 0 NJ 0 4740
+preplace netloc ENABLE_RAW_STREAM_dout 1 1 1 270J
+preplace netloc VDMA|S02_AXI_1 1 2 1 N
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 7 310 270 1980 136 3630J 270 4330J 90 NJ 90 NJ 90 5510
+preplace netloc VDMA|axis_data_fifo_1_M_AXIS 1 1 1 2640
+preplace netloc axis_to_ddr_writer_0_frame_index_V 1 3 4 3600J 398 4320J 80 NJ 80 5070
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 4 2040 166 3670J 240 4360J 140 4730
+preplace netloc vsync_V_1 1 0 2 20J 410 260J
+preplace netloc VDMA|ddr_to_axis_reader_0_m_axi_base_ddr_addr 1 2 1 N
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 4 2030 156 3610J 250 4390J 150 4720
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0_outStream_grayscale_V_V 1 3 1 N
+preplace netloc VDMA|axis_to_ddr_writer_0_frame_index_V 1 1 3 2640 396 3090 546 3400J
+preplace netloc ext_reset_in_1 1 6 2 5080 660 NJ
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_interface_0_line_valid_V 1 1 1 880
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|proc_sys_reset_0_peripheral_aresetn 1 0 3 NJ 412 880 442 NJ
+preplace netloc href_V_1 1 0 2 NJ 430 250J
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 5 1 4760
+preplace netloc CLOCK_100M_1 1 2 5 2010 106 3660 320 4350 110 4770 510 N
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|enable_raw_stream_1 1 0 3 NJ 452 NJ 452 1280
+preplace netloc VDMA|s_axi_AXILite_raw_CHROMA_1 1 0 2 NJ 806 N
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|data_in_V_1 1 0 1 N
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|PCLK_1 1 0 3 500 402 890 422 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 6 2020 1190 3630J 650 NJ 650 NJ 650 NJ 650 5480
+preplace netloc ap_start_1 1 1 2 280 260 1950J
 preplace netloc processing_system7_0_axi_periph_M00_AXI 1 5 1 N
-preplace netloc reset_25M_peripheral_aresetn 1 2 6 810 800 NJ 800 NJ 800 2370J 700 2700J 860 3100
-preplace netloc href_V_1 1 0 2 NJ 430 NJ
-preplace netloc PCLK_1 1 0 7 NJ 190 260 520 740 128 1230J 290 1930 650 NJ 650 2700
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 1970
-preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 4 780 158 1220J 270 1920J 150 2320
-preplace netloc ap_start_1 1 1 2 240 540 760J
-preplace netloc reset_24M_peripheral_reset 1 1 7 270 158 700J 118 1260J 280 1910J 80 2400J 120 2740J 420 3110
-preplace netloc data_in_V_1 1 0 2 NJ 460 250J
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 4 790 138 1280J 250 1960J 130 2310
-preplace netloc vsync_V_1 1 0 2 20J 410 NJ
-preplace netloc axi_gpio_frame_intr_ip2intc_irpt 1 6 1 2710
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 6 780 558 1260J 300 1950J 90 2390 430 NJ 430 3110
-preplace netloc xlconstant_0_dout 1 4 2 2010 820 2360
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_Q 1 2 6 710J 98 1220J -10 1970J 0 NJ 0 NJ 0 NJ
-preplace netloc axis_to_ddr_writer_0_frame_index_V 1 3 4 NJ 398 1910J 630 NJ 630 2680
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_V_V 1 2 1 720
-preplace netloc VDMA_AXIM_READER 1 3 1 1250
-preplace netloc xlconcat_dout 1 3 5 1290 810 NJ 810 2400J 710 2680J 870 3100
-preplace netloc ENABLE_RAW_STREAM_dout 1 1 1 250J
-preplace netloc ext_reset_in_1 1 6 2 2730 660 NJ
-preplace netloc clk_wiz_0_clk_out1 1 2 5 800 640 NJ 640 NJ 640 2310 680 2720
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 7 280 530 770 568 1270J 310 1980J 100 2370J 440 NJ 440 3100
-preplace netloc VDMA_AXIM_WRITER 1 3 1 1240
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 6 790 578 1280J 320 2000J 110 2360J 450 NJ 450 3100
-preplace netloc reset_sw_1 1 0 7 NJ 950 NJ 950 NJ 950 NJ 950 NJ 950 NJ 950 NJ
-preplace netloc CLOCK_100M_1 1 2 5 760 108 1290 0 1940 660 2380 720 2690
-preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 4 810 168 1210J 260 1990J 140 2330
-preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_CHROMA 1 2 1 750
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 5 1 2350
-levelinfo -pg 1 -20 130 490 1010 1600 2160 2540 2920 3130 -top -20 -bot 1950
+preplace netloc VDMA_AXIM_WRITER 1 3 1 3580
+preplace netloc VDMA|axi_mem_intercon_M00_AXI 1 3 1 N
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_V_V 1 2 1 1960
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_Q 1 2 6 1930J 116 3650J 260 4310J 10 NJ 10 NJ 10 5520J
+preplace netloc VDMA|Filter_Convolution_0_out_img_V 1 0 1 2220
+preplace netloc xlconcat_dout 1 3 5 3680 290 4400J 120 NJ 120 NJ 120 5520
+preplace netloc reset_25M_peripheral_aresetn 1 2 6 2040 1480 3670J 940 NJ 940 NJ 940 5100J 860 5480
+preplace netloc PCLK_1 1 0 7 NJ 190 290 190 1970 126 3640J 310 4340 70 NJ 70 5080
+preplace netloc VDMA|axis_data_fifo_0_M_AXIS 1 1 1 2620
+preplace netloc clk_wiz_0_clk_out1 1 2 5 2030 1340 3660J 800 NJ 800 4740 720 N
+preplace netloc VDMA|axis_to_ddr_writer_0_m_axi_base_ddr_addr 1 2 1 3060
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|LF_valid_to_AXIS_outputStream_V_V 1 2 1 1290
+preplace netloc clk_gen_25M_23M_clk_out2 1 5 3 4730J 880 5110J 870 5530J
+preplace netloc xlconstant_0_dout 1 4 2 4420 640 4720
+preplace netloc axi_gpio_frame_intr_ip2intc_irpt 1 6 1 5090
+preplace netloc VDMA|axi_mem_intercon_reader_M00_AXI 1 3 1 N
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 4380
+preplace netloc VDMA|S01_AXI_1 1 2 1 3090
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_LUMA_CHROMA_0_outStream_CHROMA_V_V 1 3 1 N
+preplace netloc VDMA|rst_processing_system7_0_100M_peripheral_aresetn 1 0 3 2240 1016 2630 586 3100
+preplace netloc VDMA|CLOCK_100M_1 1 0 3 2220 1006 2610 576 3080
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_interface_0_frame_valid_V 1 1 2 900 692 NJ
+preplace netloc OV7670_GRAYSCALE_TO_AXIS_outStream_raw_CHROMA 1 2 1 1940
+preplace netloc data_in_V_1 1 0 2 20J 450 240J
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 4 1990 -10 NJ -10 NJ -10 4750
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|ov7670_interface_0_data_out_V 1 1 1 N
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 6 2020 146 3620J 300 4410J 130 4780 220 NJ 220 5490
+preplace netloc OV7670_GRAYSCALE_TO_AXIS|vsync_V_1 1 0 1 490
+levelinfo -pg 1 -20 130 630 2360 3997 4570 4920 5293 5550 -top -20 -bot 1950
+levelinfo -hier VDMA * 2430 2850 3250 *
+levelinfo -hier OV7670_GRAYSCALE_TO_AXIS * 690 1090 1520 *
 ",
 }
 {

@@ -5,8 +5,8 @@
 ############################################################
 open_project OV7670_INTERFACE
 set_top ov7670_interface
-add_files OV7670_INTERFACE/ov7670_interface.cpp
 add_files OV7670_INTERFACE/ov7670_interface.h
+add_files OV7670_INTERFACE/ov7670_interface.cpp
 add_files -tb OV7670_INTERFACE/test_ov7670_interface.cpp
 open_solution "solution1"
 set_part {xczu3eg-sbva484-1-e}
