@@ -2,11 +2,11 @@
 # Webtalk v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # 
-# Start of session at: Wed Apr  8 11:03:17 2020
-# Process ID: 11664
-# Current directory: /home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk
+# Start of session at: Tue Jul 28 17:00:52 2020
+# Process ID: 25036
+# Current directory: /home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
-# Log file: /home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk/webtalk.log
-# Journal file: /home/kidre/Musica/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk/webtalk.jou
+# Log file: /home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk/webtalk.log
+# Journal file: /home/kidre/Documenti/Uni/Tesi/Git_project/Git_/Ultra96-/OV7670_Ultra+/OV7670_2018.1.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="prova" key="applicationwizard.hw_platform_key"/>
-	<item value="prova" key="bspwizard.hw_platform_key"/>
+	<item value="prova_gpio" key="applicationwizard.hw_platform_key"/>
+	<item value="prova_gpio" key="bspwizard.hw_platform_key"/>
 </section>
